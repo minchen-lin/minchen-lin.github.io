@@ -2,6 +2,7 @@
 
 <head>
     <link rel="stylesheet" href="assets/css/main.css"/>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/js/index.js"></script>
 </head>
 <body>
@@ -24,22 +25,27 @@
             <img id="hello-me" src="assets/images/hello-20.gif" alt="say hello">
             <img id="hello-p" src="assets/images/plant-1.png">
         </div>
-
         <div class="getstart">
             <p class="klicker">Learn more about what I do</p>
-            <img src="assets/images/getstart.svg" >
+            <div class="arrow">
+                <a  class="bounce" href="#about">
+                <img src="assets/images/getstart.svg">
+                </a>
+            </div>
         </div>
+        <div class="clouds"></div>
     </header>
 
     <!--<div class="main-nav">-->
         <nav class="main-nav">
             <ul>
-                <li><a href=" ">CONTACT</a></li>
-                <li><a href=" ">ILLUSTRATIONS</a></li>
-                <li><a href=" ">WORKS</a></li>
-                <li><a href=" ">ABOUT ME</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#approach">My Approach</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href=" ">Contact Me</a></li>
+
             </ul>
-            <a href=" " class="main-nav-trigger is-visible">
+            <a class="main-nav-trigger is-visible">
                 <img src="assets/images/nav2.svg">
             </a>
         </nav>
@@ -113,7 +119,7 @@
     <section id="approach">
         <h1 class="wtitle">My Approach</h1>
         <div class="ab intro">
-            <p class="apintro">
+            <p class="ap-intro">
                 I am Minchen Lin, the UXUI and Service Design lover.
                 I speak: Mandarin English, a little German and some of programming languages.
                 With information and service design background, I have a systematic and logical thinking with business consideration.
@@ -121,10 +127,10 @@
                 which perfect fit my personality!
             </p>
         </div>
-        <figure>
+        <div class="ap-pic">
             <img src="assets/images/approach.gif" width="70%" height=auto>
             <!--<figcaption>My service design thinking</figcaption>-->
-        </figure>
+        </div>
 
     </section>
 
@@ -147,12 +153,11 @@
             <li>
                 <div class="ch-item ch-img-1">
                     <div class="ch-info">
-                        <h3>
-                            Hospital Hygiene
-                        </h3>
-                        <p>
-                            KIDS | Germany <!--<a href="http://drbl.in/eOPF">View on Dribbble</a>-->
-                        </p></div></div>
+                        <a class="open" href="#HY">
+                            <h3>Hospital Hygiene</h3>  </a>
+                            <p>KIDS | Germany <!--<a href="http://drbl.in/eOPF">View on Dribbble</a>--></p>
+
+                    </div></div>
             </li>
             <li>
                 <div class="ch-item ch-img-2">
@@ -214,6 +219,111 @@
 	        c30.282-10.636,46.671,11.374,55.152,18.358C670,130,669.823,71.686,669.823,71.686L670-2.897L0-3.178z"/>
             </svg>
         </div>
+
+
+        <div id="HY" class="overlay">
+            <div class="popup">
+                <h1 class="p-title">Hospital Hygiene</h1>
+                <h2 class="p-subtitle"> KIDS | Germany</h2>
+                <div class="p-abstract">
+                <p>
+                Hospital Hygiene --- Project of Köln International School of Design <br/>
+                (Germany, leaded by Prof. Birgit Mager --- president of Service Design Network)
+                <p/>
+                </div>
+                <figure>
+                <img src="assets/images/project-germany/discuss.jpg">
+                <figcaption>Design research process</figcaption>
+                </figure>
+                <div class="p-content">
+                <p>
+                Cleaning services are at the lowest range of the service industries – badly paid and not valued.
+                But especially in hospitals cleaning is an important factor for hygiene and closely related to the topic of hospital-infections.
+                This is one of the big challenges of the German health system.
+                <p/>
+                </div>
+
+                <figure>
+                <img src="assets/images/project-germany/discuss.jpg">
+                <figcaption>Design research process</figcaption>
+                </figure>
+                <div class="p-content">
+                <p>
+                Cleaning services are at the lowest range of the service industries – badly paid and not valued.
+                But especially in hospitals cleaning is an important factor for hygiene and closely related to the topic of hospital-infections.
+                This is one of the big challenges of the German health system.
+                <p/>
+                </div>
+                <figure>
+                <img src="assets/images/project-germany/discuss.jpg">
+                <figcaption>Design research process</figcaption>
+                </figure>
+                <figure style="padding-bottom: 5%;">
+                <img src="assets/images/project-germany/discuss.jpg">
+                <figcaption>Design research process</figcaption>
+                </figure>
+                <a class="p-close" href="#">X</a>
+            </div>
+        </div>
+
+        <!--<div class="overlay" id="HY">-->
+            <!--<div class="p-popup">-->
+                <!--<div class="innerbox">-->
+                    <!--<div class="inner2box">-->
+                        <!--<h1 class="p-title">Hospital Hygiene</h1>-->
+                        <!--<h2 class="p-subtitle"> KIDS | Germany</h2>-->
+                        <!--<div class="p-abstract">-->
+                            <!--<p>-->
+                                <!--Hospital Hygiene -&#45;&#45; Project of Köln International School of Design <br/>-->
+                                <!--(Germany, leaded by Prof. Birgit Mager -&#45;&#45; president of Service Design Network)-->
+                            <!--<p/>-->
+                        <!--</div>-->
+                        <!--<figure>-->
+                            <!--<img src="assets/images/project-germany/discuss.jpg">-->
+                            <!--<figcaption>Design research process</figcaption>-->
+                        <!--</figure>-->
+                        <!--<div class="p-content">-->
+                            <!--<p>-->
+                                <!--Cleaning services are at the lowest range of the service industries – badly paid and not valued.-->
+                                <!--But especially in hospitals cleaning is an important factor for hygiene and closely related to the topic of hospital-infections.-->
+                                <!--This is one of the big challenges of the German health system.-->
+                            <!--<p/>-->
+                        <!--</div>-->
+
+                        <!--<figure>-->
+                            <!--<img src="assets/images/project-germany/discuss.jpg">-->
+                            <!--<figcaption>Design research process</figcaption>-->
+                        <!--</figure>-->
+                        <!--<div class="p-content">-->
+                            <!--<p>-->
+                                <!--Cleaning services are at the lowest range of the service industries – badly paid and not valued.-->
+                                <!--But especially in hospitals cleaning is an important factor for hygiene and closely related to the topic of hospital-infections.-->
+                                <!--This is one of the big challenges of the German health system.-->
+                            <!--<p/>-->
+                        <!--</div>-->
+                        <!--<figure>-->
+                            <!--<img src="assets/images/project-germany/discuss.jpg">-->
+                            <!--<figcaption>Design research process</figcaption>-->
+                        <!--</figure>-->
+                        <!--<figure style="padding-bottom: 5%;">-->
+                            <!--<img src="assets/images/project-germany/discuss.jpg">-->
+                            <!--<figcaption>Design research process</figcaption>-->
+                        <!--</figure>-->
+                        <!--<a class="p-close" href="#work">X</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+
+
+
+
+
+
+
+
 
 
 
