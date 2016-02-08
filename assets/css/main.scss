@@ -781,7 +781,7 @@ figcaption{
   text-align: center;
 }
 
-.p-close {
+#close {
   border: none;
   background-color: transparent;
   position: absolute;
@@ -805,7 +805,7 @@ figcaption{
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
 
-.p-close:hover {
+#close:hover {
   -webkit-transform: rotate(90deg) scale(.8);
   -ms-transform: rotate(90deg) scale(.8);
   -moz-transform: rotate(90deg) scale(.8);
