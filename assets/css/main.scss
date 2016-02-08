@@ -649,6 +649,7 @@ header{
   transition: all 0.3s ease-out;
 }
 
+
 //project end
 .overlay{
   position: fixed;
@@ -662,10 +663,21 @@ header{
   opacity: 0;
 }
 
-.overlay:target {
-  visibility: visible;
+.overlay.is-visible {
   opacity: 1;
+  visibility: visible;
+  z-index: 8888;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
 }
+
+//.overlay:target {
+//  visibility: visible;
+//  opacity: 1;
+//}
+
+
 
 .popup{
   width: 75%;
@@ -781,7 +793,7 @@ figcaption{
   text-align: center;
 }
 
-#close {
+.close {
   border: none;
   background-color: transparent;
   position: absolute;
@@ -805,7 +817,7 @@ figcaption{
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
 
-#close:hover {
+.close:hover {
   -webkit-transform: rotate(90deg) scale(.8);
   -ms-transform: rotate(90deg) scale(.8);
   -moz-transform: rotate(90deg) scale(.8);
