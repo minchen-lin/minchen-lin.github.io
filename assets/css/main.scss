@@ -3,6 +3,8 @@ $darkcolor: #22313F;
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500,700|Montserrat+Alternates:400,700);
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700);
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(https://fonts.googleapis.com/css?family=Armata);
+
 
 
 header{
@@ -314,10 +316,13 @@ header{
   width: 62%;
   margin-left: 0;
   padding-left: 19%;
-  font-family: 'Alegreya Sans', sans-serif;
+  //font-family: 'Alegreya Sans', sans-serif;
+  //font-weight: 400;
+  font-family: 'Armata', sans-serif;
   font-weight: 400;
-  font-size: 1.05em;
-  line-height: 1.5em;
+  font-size: 1em;
+  letter-spacing: 0.03em;
+  //line-height: 1.5em;
   text-align:center;
   //background-color: $whitecolor;
 }
@@ -463,12 +468,15 @@ header{
 
 .ap-intro{
   color: #ffffff;
+  margin-bottom: 35px;
 }
 
 .ap-pic{
   background-color: #ffffff;
   //margin-top: 0;
+  width: 80%;
   text-align: center;
+  margin: auto;
   border-radius: 15px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -834,4 +842,104 @@ figcaption{
 #contact{
   height: 100vh;
   background-color: #22313f;
+}
+
+.title2{
+  color: #ECECEC;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 700;
+  font-size: 2.2em;
+  letter-spacing: 0.09em;
+  margin: 0;
+  padding-top: 15%;
+  text-align: center;
+}
+
+.con-bk{
+  //margin-top: 10%;
+  width: 100vw;
+  height: 60%;
+  min-height: 200px;
+  //background-color: rgba(83,83,83,0.55);
+  position: relative;
+}
+
+.con-intro{
+  position: absolute;
+  width: 45%;
+  top: 45px;
+  left: 50%;
+  color: #ECECEC;
+  font-family: 'Armata', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  //letter-spacing: 0.08em;
+  margin: auto;
+  //padding-top: 2%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.col-lg-12 a#mailaccount {
+  position: absolute;
+  border-radius: 10px;
+  top: 25%;
+  left: 50%;
+  //transform: translateX(-50%) translateY(-50%);
+  background-color: #FF7B69;
+  color: white;
+  padding: 15px;
+  font-family: 'Armata', sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  display: block;
+  //margin: auto;
+  text-align: center;
+  font-weight: 500;
+  width: 250px;
+  margin-left: -125px;
+  -webkit-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.col-lg-12 a#mailaccount:hover {
+  background-color: transparent;
+  color: #FF7B69; }
+
+//footer
+
+footer{
+  width: 100%;
+  height: 55px;
+  position: relative;
+  background: url("/assets/images/footer.jpg");
+  background-color: rgba(83,83,83,0.7);
+  background-blend-mode: multiply;
+  background-size: cover;
+  border-bottom: 2px solid #D2D7D3;
+
+}
+
+.sign{
+  font-family: 'Armata', sans-serif;
+  font-weight: 400;
+  font-size: 0.8em;
+  //letter-spacing: 0.03em;
+  color: #ECECEC;
+  //line-height: 1.5em;
+  //position: absolute;
+  //top: 25%;
+  //left: 50%;
+  //transform: translateX(-50%) translateY(-50%);
+  padding-top: 15px;
+  text-align: center;
 }
