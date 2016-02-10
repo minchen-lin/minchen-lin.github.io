@@ -9,6 +9,12 @@ $(function () {
     });
 
     //open popup
+    $('.open1').on('click', function(event){
+        event.preventDefault();
+        $('.overlayTW').addClass('is-visible');
+        $('body').css('overflow', 'hidden');
+    });
+
     $('.open').on('click', function(event){
         event.preventDefault();
         $('.overlay').addClass('is-visible');
@@ -16,6 +22,14 @@ $(function () {
     });
 
     //close popup
+    $('.overlayTW').on('click', function(event){
+        if( $(event.target).is('.close') || $(event.target).is('.overlayTW') ) {
+            event.preventDefault();
+            $(this).removeClass('is-visible');
+        }
+        $('body').css('overflow', 'scroll');
+    });
+
     $('.overlay').on('click', function(event){
         if( $(event.target).is('.close') || $(event.target).is('.overlay') ) {
             event.preventDefault();

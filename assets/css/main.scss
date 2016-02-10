@@ -508,7 +508,7 @@ header{
 
 .workspace {
   margin: auto;
-  padding-top: 120px;
+  padding-top: 85px;
   //margin-top: 300px;
   //padding: 0 0 10% 10%;
   list-style: none;
@@ -657,7 +657,19 @@ header{
 
 
 //project end
-.overlay{
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlayTW{
   position: fixed;
   top: 0;
   bottom: 0;
@@ -670,6 +682,15 @@ header{
 }
 
 .overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+  z-index: 8888;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+.overlayTW.is-visible {
   opacity: 1;
   visibility: visible;
   z-index: 8888;
@@ -757,7 +778,7 @@ header{
 
 .p-subtitle{
   color: #9E9E9E;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Armata', sans-serif;
   font-weight: 400;
   font-size: 1.2em;
   letter-spacing: 0.08em;
@@ -766,22 +787,23 @@ header{
 }
 
 .p-abstract{
-  width: 70%;
+  width: 75%;
   margin:auto;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Armata', sans-serif;
   font-weight: 400;
-  font-size: 1.05em;
+  font-size: 0.8em;
   line-height: 1.5em;
   text-align:center;
+  padding-top: 3%;
   //background-color: $whitecolor;
 }
 
 .p-content{
   width: 85%;
   margin:auto;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Armata', sans-serif;
   font-weight: 400;
-  font-size: 1.05em;
+  font-size: 0.8em;
   line-height: 1.5em;
   text-align:center;
 }
@@ -797,6 +819,10 @@ figure{
 figcaption{
   padding-top: 10px;
   text-align: center;
+  font-family: 'Armata', sans-serif;
+  font-weight: 400;
+  font-size: 0.6em;
+  padding-bottom: 10px;
 }
 
 .close {
@@ -858,7 +884,7 @@ figcaption{
 .con-bk{
   //margin-top: 10%;
   width: 100vw;
-  height: 60%;
+  height: 55%;
   min-height: 200px;
   //background-color: rgba(83,83,83,0.55);
   position: relative;
@@ -873,6 +899,7 @@ figcaption{
   font-family: 'Armata', sans-serif;
   font-weight: 400;
   font-size: 1em;
+  line-height: 1.5em;
   //letter-spacing: 0.08em;
   margin: auto;
   //padding-top: 2%;
@@ -898,8 +925,8 @@ figcaption{
   //margin: auto;
   text-align: center;
   font-weight: 500;
-  width: 250px;
-  margin-left: -125px;
+  width: 200px;
+  margin-left: -110px;
   -webkit-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
