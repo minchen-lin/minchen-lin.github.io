@@ -592,6 +592,25 @@ header {
   margin: 0;
   text-align: center; }
 
+.p-aptitle {
+  color: #78909C;
+  font-family: 'Armata', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-align: center;
+  padding-top: 20px; }
+
+.p-contact {
+  color: #3F51B5;
+  font-family: 'Armata', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+  text-align: center;
+  padding-top: 20px; }
+
 .p-abstract {
   width: 75%;
   margin: auto;
@@ -599,11 +618,12 @@ header {
   font-weight: 400;
   font-size: 0.8em;
   line-height: 1.5em;
+  font-weight: bold;
   text-align: center;
-  padding-top: 3%; }
+  padding-bottom: 2%; }
 
 .p-content {
-  width: 85%;
+  width: 75%;
   margin: auto;
   font-family: 'Armata', sans-serif;
   font-weight: 400;
@@ -615,7 +635,6 @@ figure {
   width: 85%;
   height: auto;
   margin: auto;
-  padding-top: 2%;
   text-align: center; }
 
 figcaption {
@@ -624,7 +643,7 @@ figcaption {
   font-family: 'Armata', sans-serif;
   font-weight: 400;
   font-size: 0.6em;
-  padding-bottom: 10px; }
+  padding-bottom: 30px; }
 
 .close {
   border: none;
