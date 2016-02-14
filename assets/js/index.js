@@ -9,34 +9,46 @@ $(function () {
     });
 
     //open popup
-    $('.open1').on('click', function(event){
+    $('.open').on('click', function(event){
+        console.log('click');
         event.preventDefault();
-        $('.overlayTW').addClass('is-visible');
+        var targetId = this.getAttribute('data-target');
+        $('#'+ targetId).addClass('is-visible');
+        //$('.overlayTW').addClass('is-visible');
         $('body').css('overflow', 'hidden');
     });
 
-    $('.open').on('click', function(event){
-        event.preventDefault();
-        $('.overlay').addClass('is-visible');
-        $('body').css('overflow', 'hidden');
-    });
+    //$('.open').on('click', function(event){
+    //    event.preventDefault();
+    //    $('.overlay').addClass('is-visible');
+    //    $('body').css('overflow', 'hidden');
+    //});
+
 
     //close popup
-    $('.overlayTW').on('click', function(event){
-        if( $(event.target).is('.close') || $(event.target).is('.overlayTW') ) {
-            event.preventDefault();
-            $(this).removeClass('is-visible');
-        }
+    $('.close').on('click', function(event){
+        event.preventDefault();
+        var targetId = this.getAttribute('data-target');
+        $('#'+ targetId).removeClass('is-visible');
         $('body').css('overflow', 'scroll');
     });
 
-    $('.overlay').on('click', function(event){
-        if( $(event.target).is('.close') || $(event.target).is('.overlay') ) {
-            event.preventDefault();
-            $(this).removeClass('is-visible');
-        }
-        $('body').css('overflow', 'scroll');
-    });
+
+    //$('.overlayTW').on('click', function(event){
+    //    if( $(event.target).is('.close') || $(event.target).is('.overlayTW') ) {
+    //        event.preventDefault();
+    //        $(this).removeClass('is-visible');
+    //    }
+    //    $('body').css('overflow', 'scroll');
+    //});
+    //
+    //$('.overlay').on('click', function(event){
+    //    if( $(event.target).is('.close') || $(event.target).is('.overlay') ) {
+    //        event.preventDefault();
+    //        $(this).removeClass('is-visible');
+    //    }
+    //    $('body').css('overflow', 'scroll');
+    //});
 });
 
 //window.onscroll = function() {scrollTosec()};
