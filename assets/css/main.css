@@ -580,14 +580,23 @@ header {
   font-size: 1.8em;
   letter-spacing: 0.08em;
   margin: 0;
-  padding-top: 8%;
+  padding-top: 5%;
+  text-align: center; }
+
+.p-title-desc {
+  color: #34465d;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
+  font-size: 1.2em;
+  letter-spacing: 0.08em;
+  margin: 0;
   text-align: center; }
 
 .p-subtitle {
   color: #9E9E9E;
   font-family: 'Armata', sans-serif;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.02em;
   letter-spacing: 0.08em;
   margin: 0;
   text-align: center; }
@@ -600,10 +609,20 @@ header {
   letter-spacing: 0.08em;
   margin: 0;
   text-align: center;
+  padding-top: 30px; }
+
+.p-servicetitle {
+  color: #34465d;
+  font-family: 'Armata', sans-serif;
+  font-weight: 400;
+  font-size: 1.05em;
+  letter-spacing: 0.08em;
+  margin: 0;
+  text-align: center;
   padding-top: 20px; }
 
 .p-contact {
-  color: #3F51B5;
+  color: #34465d;
   font-family: 'Armata', sans-serif;
   font-weight: 400;
   font-size: 1em;
