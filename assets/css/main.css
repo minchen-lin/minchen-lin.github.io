@@ -409,7 +409,7 @@ header {
   height: 220px;
   margin-left: 4%;
   margin-right: 4%;
-  margin-top: 5%;
+  margin-top: 3%;
   display: inline-block;
   text-align: center; }
 
@@ -419,7 +419,7 @@ header {
   border-radius: 50%;
   position: relative;
   cursor: default;
-  box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 0.6), 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -471,17 +471,18 @@ header {
 .ch-info h3 {
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 22px;
+  font-size: 1.2em;
+  letter-spacing: 0.08em;
   padding: 60px 0 0 0;
   height: 30px;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Armata', sans-serif;
+  font-weight: 400;
   text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3); }
 
 .ch-info p {
   color: #fff;
   padding: 10px 5px;
-  font-style: italic;
+  font-family: 'Armata', sans-serif;
   margin: 0 50px;
   font-size: 12px;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
