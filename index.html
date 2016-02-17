@@ -4,21 +4,23 @@
     <link rel="stylesheet" href="assets/css/main.css"/>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/js/index.js"></script>
+    <script>
+        var IS_CMYK_SUPPORTED = (function(){
+            var value = 'cmyk(1%,1%,1%,0.5%)',
+                    el = document.createElement('p'),
+                    result = false;
+            try {
+                el.style.color = value;
+                result = /^cmyk/.test(el.style.color);
+            } catch(e) { }
+            el = null;
+            return result;
+        })();
+    </script>
 </head>
 <body>
 
 <header>
-    <!--<nav>-->
-    <!--<a href=" ">CONTACT</a>-->
-    <!--<a href=" ">ILLUSTRATIONS</a>-->
-    <!--<a href=" ">WORKS</a>-->
-    <!--<a href=" ">ABOUT ME</a>-->
-    <!--</nav>-->
-
-    <!--<div class="menu-active">-->
-    <!--<img src="assets/images/nav2.svg" >-->
-    <!--</div>-->
-
     <div style='overflow:hidden'></div>
     <div class="greeting">
         <h1 class="center">Hello, I am Minchen. <br/> An UXUI & Service Designer!</h1>
@@ -26,7 +28,7 @@
         <img id="hello-p" src="assets/images/plant-1.png">
     </div>
     <div class="getstart">
-        <p class="klicker">Learn more about what I do</p>
+        <p class="clicker">Learn more about what I do</p>
 
         <div class="arrow">
             <a class="bounce" href="#about">
@@ -57,19 +59,8 @@
 
     <div class="ab intro">
         <p class="intro-bk">
-            I am Minchen Lin, the UXUI and Service Design lover. I speak: Mandarin English, a little German and some of
-            programming languages. I do user research, business model analysis, interface and service design. With
-            information and service design background, I have a systematic and logical thinking with business
-            consideration.
-            And this specialty enables me to contact and interact with people from different trades, which perfect fit
-            my personality!
-            <!--I am Minchen Lin, the UXUI and Service Design lover.-->
-            <!--I speak: Mandarin English, a little German and some of programming languages.-->
-            <!--With information and service design background, I have a systematic and logical thinking with business consideration.-->
-            <!--And this speciality enables me to contact and interact with people from different trades,-->
-            <!--which perfect fit my personality!-->
-            <!--<br/>For me, UX is formed by interactions of each touch points. Also interactions could be with people, interfaces or other stuffs.-->
-            <!--With people growing, the community is forming, and interactions are from virtual to reality. Then the impact will be created.-->
+            I am Minchen Lin, the UXUI and Service Design lover with 3 years of practical experience in this field. I have great experience in User Research, Business Model Analysis, UXUI and Service Design. In Taiwan and in Germany I have participated in several related projects. With my Information and Service Design background, I have systematic and logical thinking with business consideration. I speak Mandarin, English, some German and several programming languages.
+            Interacting and working with people from different fields has always been exciting for me and meets my personality perfectly.
 
         <p/>
         <!--Illustrating is the most have, I love to use pens to record my life.-->
@@ -139,12 +130,8 @@
 
     <div class="ab intro">
         <p class="ap-intro">
-            I am Minchen Lin, the UXUI and Service Design lover.
-            I speak: Mandarin English, a little German and some of programming languages.
-            With information and service design background, I have a systematic and logical thinking with business
-            consideration.
-            And this speciality enables me to contact and interact with people from different trades,
-            which perfect fit my personality!
+            I put user in my mind, and dig for insights.
+            I do synthesis of business, technology, and aesthetic to ideate every possibility. By testing and iterations I deliver meaningful and valuable solutions.
         </p>
     </div>
     <div class="ap-pic">
@@ -368,7 +355,7 @@
             <h2 class="p-subtitle"> Germany | 2014</h2>
             <div class="p-abstract">
                 <p>
-                    -- This project was done on German hospitals, led by Prof. Birgit Mager --- President of Service Design Network -- </br>
+                    -- This project was done on German hospitals, led by Prof. Birgit Mager - President of Service Design Network -- </br>
                     Hospital infections and resistant germs are becoming a serious problem in whole Europe. To fight against it has become a very important issue for the German government. We developed the solution, MediClean, which offers a series of innovative services for improving hospital hygiene.
                 </P>
             </div>
@@ -508,7 +495,7 @@
                 <p/>
             </div>
             <figure>
-                <img src="assets/images/projects/F1.jpg" style="width: 100%">
+                <img src="assets/images/projects/F4.jpg" style="width: 100%">
                 <figcaption>-- Flow Model – show the interactions of roles (parents, children, classmates...) --</figcaption>
             </figure>
             <div class="p-content">
@@ -516,10 +503,11 @@
                 <p>
                     After some discussions we decided to use “sense of participation” and “competition” to improve problems we found. Moreover Family Tower not just enhance health promotion, but also use the topic “Health” to strengthen the relationship of family.
                 <p/>
-                <iframe src="https://player.vimeo.com/video/103599926" width="600" height="380" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
             </div>
             <figure>
                 <img src="assets/images/projects/F2.jpg" style="width: 100%">
+                <iframe style="padding-top: 20px;" src="https://player.vimeo.com/video/103599926" width=800" height="380" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </figure>
             <div class="p-content">
 
@@ -578,8 +566,8 @@
 
     <div class="contact-bg">
         <p class="contact-intro">
-            If you want to collaborate on something rock and meaningful or just say hello,
-            feel free to sent me a message. Hope to hear from you soon!
+            If you want to collaborate on something awesome and meaningful or just say hello, feel free to sent me a message.
+            Hope to hear from you soon!
         </p>
         <!--<img id="hello-me" src="assets/images/hello-20.gif" alt="say hello">-->
         <!--<img id="hello-p" src="assets/images/plant-1.png">-->
