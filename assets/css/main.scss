@@ -412,7 +412,7 @@ header{
 }
 .skill{
   width: 20%;
-  max-width: 300px;
+  max-width: 330px;
   height: 43%;
   max-height: 280px;
   margin-top: 6.6%;
@@ -549,8 +549,10 @@ header{
 }
 
 .workspace li {
-  width: 220px;
-  height: 220px;
+  width: 25%;
+  height: 25%;
+  min-width: 220px;
+  min-height: 220px;
   //-webkit-transform: translateY(-100%);
   //-ms-transform: translateY(-100%);
   //transform: translateY(-100%);
