@@ -3,6 +3,53 @@
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
 @import url(https://fonts.googleapis.com/css?family=Armata);
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 header {
   height: 100%;
   background: url("/assets/images/starry-night-9.jpg");
@@ -254,7 +301,8 @@ header {
   display: inline-block;
   vertical-align: middle;
   margin-left: 7em;
-  margin-top: 0; }
+  margin-top: 0;
+  padding-top: 15px; }
 
 .intro {
   width: 62%;
@@ -263,6 +311,7 @@ header {
   font-family: 'Armata', sans-serif;
   font-weight: 400;
   font-size: 0.88em;
+  line-height: 1.3em;
   letter-spacing: 0.03em;
   text-align: center; }
 
@@ -400,7 +449,7 @@ header {
 
 .workspace {
   margin: auto;
-  padding-top: 85px;
+  padding-top: 8%;
   list-style: none;
   display: block;
   text-align: center;
@@ -478,15 +527,15 @@ header {
   text-transform: uppercase;
   font-size: 1.2em;
   letter-spacing: 0.08em;
-  padding: 60px 0 0 0;
-  height: 30px;
+  padding: 35% 0 0 0;
+  height: 25%;
   font-family: 'Armata', sans-serif;
   font-weight: 400;
   text-shadow: 0 0 1px #fff, 0 1px 2px rgba(0, 0, 0, 0.3); }
 
 .ch-info p {
   color: #fff;
-  padding: 10px 5px;
+  padding: 2% 5px;
   font-family: 'Armata', sans-serif;
   margin: 0 50px;
   font-size: 12px;
@@ -620,7 +669,8 @@ header {
   font-size: 1.02em;
   letter-spacing: 0.08em;
   margin: 0;
-  text-align: center; }
+  text-align: center;
+  padding-top: 1.2%; }
 
 .p-aptitle {
   color: #78909C;
@@ -629,18 +679,17 @@ header {
   font-size: 1.2em;
   letter-spacing: 0.08em;
   margin: 0;
-  text-align: center;
-  padding-top: 30px; }
+  text-align: center; }
 
 .p-servicetitle {
-  color: #34465d;
+  color: #3f9393;
   font-family: 'Armata', sans-serif;
   font-weight: 400;
   font-size: 1.05em;
   letter-spacing: 0.08em;
   margin: 0;
   text-align: center;
-  padding-top: 20px; }
+  padding-top: 1.2%; }
 
 .p-contact {
   color: #34465d;
@@ -660,7 +709,8 @@ header {
   line-height: 1.5em;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 2%; }
+  padding-top: 2%;
+  padding-bottom: 1%; }
 
 .p-content {
   width: 80%;
@@ -669,7 +719,9 @@ header {
   font-weight: 400;
   font-size: 0.8em;
   line-height: 1.5em;
-  text-align: center; }
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%; }
 
 figure {
   width: 85%;
@@ -683,7 +735,7 @@ figcaption {
   font-family: 'Armata', sans-serif;
   font-weight: 400;
   font-size: 0.6em;
-  padding-bottom: 30px; }
+  padding-bottom: 2%; }
 
 .close {
   border: none;
@@ -730,7 +782,7 @@ figcaption {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 10%; }
 
 .contact-bg {
   width: 100%;
