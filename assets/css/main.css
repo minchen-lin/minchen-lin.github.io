@@ -428,6 +428,12 @@ header {
   height: 100vh;
   background-color: #22313f; }
 
+.pinkcloud {
+  position: absolute;
+  z-index: 1000;
+  margin: auto;
+  left: 16%; }
+
 .ap-intro {
   color: #ffffff;
   margin-bottom: 35px; }
@@ -956,5 +962,43 @@ footer {
     -ms-transform: translateY(-12px);
     -webkit-transform: translateY(-12px);
     transform: translateY(-12px); } }
+.float3 {
+  -moz-animation: float3 12s infinite;
+  -webkit-animation: float3 12s infinite;
+  animation: float3 12s infinite; }
+
+@keyframes float3 {
+  0%, 100% {
+    -moz-transform: translateX(-5);
+    -ms-transform: translateX(-5);
+    -webkit-transform: translateX(-5);
+    transform: translateX(-5); }
+  50% {
+    -moz-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    -webkit-transform: translateX(15px);
+    transform: translateX(15px); } }
+@-moz-keyframes float3 {
+  0%, 100% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  50% {
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); } }
+@-webkit-keyframes float3 {
+  0%, 100% {
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
+  50% {
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px); } }
 
 /*# sourceMappingURL=main.css.map */
