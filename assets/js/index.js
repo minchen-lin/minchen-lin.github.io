@@ -9,7 +9,7 @@ $(function () {
     });
 
     //open popup
-    $('.open').on('click', function(event){
+    $('.ch-item').on('click', function(event){
         console.log('click');
         event.preventDefault();
         var targetId = this.getAttribute('data-target');
