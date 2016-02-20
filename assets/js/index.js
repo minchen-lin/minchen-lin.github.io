@@ -44,6 +44,23 @@ $(function () {
         document.body.removeEventListener('touchstart', listener);
     });
 
+    $('.overlay').on('click', function(event){
+        //event.preventDefault();
+        //var targetId = this.getAttribute('id');
+        //$('#'+ targetId).removeClass('is-visible');
+        //$('body').css('overflow', 'scroll');
+
+        event.preventDefault();
+        var $target = $(event.target);
+        var targetId = this.getAttribute('id');
+        if ($target.hasClass("overlay") == true) {
+            $('#'+ targetId).removeClass('is-visible');
+            $('body').css('overflow', 'scroll');
+        };
+
+        document.body.removeEventListener('touchstart', listener);
+    });
+
 
     //$('.overlayTW').on('click', function(event){
     //    if( $(event.target).is('.close') || $(event.target).is('.overlayTW') ) {
