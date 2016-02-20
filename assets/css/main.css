@@ -50,6 +50,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.ie9 img[src*=".svg"] {
+  width: 100%; }
+
+/* 2 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src*=".svg"] {
+    width: 100%; } }
 header {
   height: 100%;
   background: url("/assets/images/starry-night-9.jpg");
