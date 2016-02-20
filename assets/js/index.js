@@ -8,6 +8,13 @@ $(function () {
         history.pushState({}, "", this.href);  /* 上一頁是回到上一個狀況 */
     });
 
+
+    var listener = function (e) {
+        if (e.target.className !== 'popup') {
+            e.preventDefault();
+        }
+    };
+
     //open popup
     $('.ch-item').on('click', function(event){
         console.log('click');
@@ -16,6 +23,8 @@ $(function () {
         $('#'+ targetId).addClass('is-visible');
         //$('.overlayTW').addClass('is-visible');
         $('body').css('overflow', 'hidden');
+
+        document.body.addEventListener('touchstart', listener);
     });
 
     //$('.open').on('click', function(event){
@@ -31,6 +40,8 @@ $(function () {
         var targetId = this.getAttribute('data-target');
         $('#'+ targetId).removeClass('is-visible');
         $('body').css('overflow', 'scroll');
+
+        document.body.removeEventListener('touchstart', listener);
     });
 
 
