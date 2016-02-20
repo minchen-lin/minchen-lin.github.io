@@ -10,7 +10,7 @@ $(function () {
 
 
     var listener = function (e) {
-        if (e.target.className === 'overlay') {
+        if (!$(e.target).parents('.popup').length) {
             e.preventDefault();
         }
     };
