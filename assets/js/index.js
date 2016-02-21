@@ -56,9 +56,9 @@ $(function () {
         if ($target.hasClass("overlay") == true) {
             $('#'+ targetId).removeClass('is-visible');
             $('body').css('overflow', 'scroll');
+        document.body.removeEventListener('touchstart', listener);
         };
 
-        document.body.removeEventListener('touchstart', listener);
     });
 
 
