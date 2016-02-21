@@ -32,6 +32,13 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
 body {
   line-height: 1; }
 
@@ -156,34 +163,6 @@ header {
   padding: 10px 0;
   cursor: pointer; }
 
-@media (min-width: 768px) {
-  .main-nav {
-    left: 0;
-    height: auto; }
-
-  .main-nav:before {
-    height: 90px; }
-
-  .main-nav ul {
-    top: auto;
-    bottom: 0;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none; }
-
-  .main-nav ul li {
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%);
-    display: inline-block; }
-
-  .main-nav:hover ul li {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0); }
-
-  .main-nav:hover:before {
-    margin-top: 0; } }
 .clear-fix {
   clear: both; }
 
