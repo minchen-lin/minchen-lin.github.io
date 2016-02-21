@@ -12,14 +12,14 @@ $(function () {
     });
 
 
-    var listener = function (e) {
+    var onTouchStartListener = function (e) {
         if (!$(e.target).parents('.popup').length) {
             e.preventDefault();
             var $target = $(e.target);
             if ($target.hasClass("overlay")) {
                 $target.removeClass('is-visible');
                 $('body').css('overflow', 'scroll');
-                document.body.removeEventListener('touchstart', listener);
+                document.body.removeEventListener('touchstart', onTouchStartListener);
             }
         }
     };
@@ -33,7 +33,7 @@ $(function () {
         //$('.overlayTW').addClass('is-visible');
         $('body').css('overflow', 'hidden');
 
-        document.body.addEventListener('touchstart', listener);
+        document.body.addEventListener('touchstart', onTouchStartListener);
     });
 
     //$('.open').on('click', function(event){
@@ -50,7 +50,7 @@ $(function () {
         $('#' + targetId).removeClass('is-visible');
         $('body').css('overflow', 'scroll');
 
-        document.body.removeEventListener('touchstart', listener);
+        document.body.removeEventListener('touchstart', onTouchStartListener);
     });
 
     $('.overlay').on('click', function (event) {
@@ -64,7 +64,7 @@ $(function () {
         if ($target.hasClass("overlay")) {
             $target.removeClass('is-visible');
             $('body').css('overflow', 'scroll');
-            document.body.removeEventListener('touchstart', listener);
+            document.body.removeEventListener('touchstart', onTouchStartListener);
         }
 
     });
