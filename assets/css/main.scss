@@ -457,7 +457,7 @@ header{
   font-size: 3em;
   letter-spacing: 0.08em;
   margin: 0;
-  padding-top: 3%;
+  padding-top: 5%;
   //text-align: center;
   position: absolute;
   left: 50%;
@@ -631,7 +631,7 @@ header{
 
 .workspace {
   margin: auto;
-  padding-top: 10%;
+  padding-top: 20vh;
   //background-color: #3f9393;
   //margin-top: 300px;
   //padding: 0 0 10% 10%;
@@ -712,8 +712,6 @@ header{
   position: absolute;
   background: rgba(63,147,147, 0.8);
   //background: rgba(77,182,172, 0.8);
-
-
 
   width: inherit;
   height: inherit;
