@@ -1,26 +1,35 @@
 $(function () {
-    $("a[href^=#]").not(".open").on("click", function(e) {
+    $("a[href^=#]").not(".open").on("click", function (e) {
         var targetElement = $(this.hash);
         $('html,body').animate({
             scrollTop: targetElement.offset().top
-        }, 800);  /* 0.8秒的速度 */
-        e.preventDefault();  /* 拿掉預設的會執行的動作 */
-        history.pushState({}, "", this.href);  /* 上一頁是回到上一個狀況 */
+        }, 800);
+        /* 0.8秒的速度 */
+        e.preventDefault();
+        /* 拿掉預設的會執行的動作 */
+        history.pushState({}, "", this.href);
+        /* 上一頁是回到上一個狀況 */
     });
 
 
     var listener = function (e) {
         if (!$(e.target).parents('.popup').length) {
             e.preventDefault();
+            var $target = $(e.target);
+            if ($target.hasClass("overlay")) {
+                $target.removeClass('is-visible');
+                $('body').css('overflow', 'scroll');
+                document.body.removeEventListener('touchstart', listener);
+            }
         }
     };
 
     //open popup
-    $('.ch-item').on('click', function(event){
+    $('.ch-item').on('click', function (event) {
         console.log('click');
         event.preventDefault();
         var targetId = this.getAttribute('data-target');
-        $('#'+ targetId).addClass('is-visible');
+        $('#' + targetId).addClass('is-visible');
         //$('.overlayTW').addClass('is-visible');
         $('body').css('overflow', 'hidden');
 
@@ -35,16 +44,16 @@ $(function () {
 
 
     //close popup
-    $('.close').on('click', function(event){
+    $('.close').on('click', function (event) {
         event.preventDefault();
         var targetId = this.getAttribute('data-target');
-        $('#'+ targetId).removeClass('is-visible');
+        $('#' + targetId).removeClass('is-visible');
         $('body').css('overflow', 'scroll');
 
         document.body.removeEventListener('touchstart', listener);
     });
 
-    $('.overlay').on('click', function(event){
+    $('.overlay').on('click', function (event) {
         //event.preventDefault();
         //var targetId = this.getAttribute('id');
         //$('#'+ targetId).removeClass('is-visible');
@@ -52,12 +61,11 @@ $(function () {
 
         event.preventDefault();
         var $target = $(event.target);
-        var targetId = this.getAttribute('id');
-        if ($target.hasClass("overlay") == true) {
-            $('#'+ targetId).removeClass('is-visible');
+        if ($target.hasClass("overlay")) {
+            $target.removeClass('is-visible');
             $('body').css('overflow', 'scroll');
-        document.body.removeEventListener('touchstart', listener);
-        };
+            document.body.removeEventListener('touchstart', listener);
+        }
 
     });
 
