@@ -156,6 +156,34 @@ header {
   padding: 10px 0;
   cursor: pointer; }
 
+@media (min-width: 600px) {
+  .main-nav {
+    left: 0;
+    height: auto; }
+
+  .main-nav:before {
+    height: 90px; }
+
+  .main-nav ul {
+    top: auto;
+    bottom: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none; }
+
+  .main-nav ul li {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    display: inline-block; }
+
+  .main-nav:hover ul li {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0); }
+
+  .main-nav:hover:before {
+    margin-top: 0; } }
 .clear-fix {
   clear: both; }
 
@@ -332,7 +360,7 @@ header {
   font-size: 1em;
   letter-spacing: 0.05em;
   padding-top: 5%;
-  padding-bottom: 10%; }
+  padding-bottom: 8%; }
 
 .ability {
   text-align: center; }
@@ -340,7 +368,7 @@ header {
 .skill {
   width: 20vw;
   max-width: 300px;
-  height: 42vh;
+  height: 40%;
   max-height: 300px;
   margin-top: 7.5%;
   margin-left: 2%;
@@ -415,12 +443,11 @@ header {
 
 .ap-intro {
   color: #ffffff;
-  margin-bottom: 5%; }
+  margin-bottom: 10vh; }
 
 .ap-pic {
   background-color: #ECECEC;
   width: 88%;
-  height: 65%;
   text-align: center;
   margin: auto;
   border-radius: 15px;
@@ -764,9 +791,10 @@ figcaption {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 15%; }
+  bottom: 5%; }
 
 .contact-bg {
+  margin-top: 2%;
   width: 100%;
   height: 55%;
   position: relative; }
@@ -787,7 +815,7 @@ figcaption {
 .col-lg-12 a#mailaccount {
   position: absolute;
   border-radius: 10px;
-  top: 15%;
+  top: 18%;
   left: 50%;
   background-color: #FF7B69;
   color: white;
