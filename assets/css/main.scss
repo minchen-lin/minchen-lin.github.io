@@ -566,23 +566,48 @@ header{
   //background-color: rgba(78,88,114,0.88);
 }
 
-
-.pinkcloud {
-  position: absolute;
-  z-index: 1000;
-  margin: auto;
-  left: 16%;
-}
-
 .ap-intro{
   color: #ffffff;
-  margin-bottom: 10vh;
+  margin-bottom: 6%;
 }
+
+//@media (min-width: 992px) {
+//  .ap-pic{
+//    background-color: #ECECEC;
+//    //margin-top: 0;
+//    height: 60%;
+//    //width: 88%;
+//    //height: auto;
+//    text-align: center;
+//    margin: auto;
+//    border-radius: 15px;
+//    -moz-border-radius: 15px;
+//    -webkit-border-radius: 15px;
+//    padding-bottom: 1.5%;
+//  }
+//
+//  .doublediamond{
+//    position: relative;
+//    height: 90%;
+//    width: 80%;
+//    padding-top: 2%;
+//    padding-bottom: 2%;
+//  }
+//
+//  .pinkcloud {
+//    width: 70%;
+//    position: absolute;
+//    z-index: 1000;
+//    margin: auto;
+//    left: 16%;
+//  }
+//}
 
 .ap-pic{
   background-color: #ECECEC;
   //margin-top: 0;
   width: 88%;
+  height: 60%;
   //height: auto;
   text-align: center;
   margin: auto;
@@ -591,6 +616,31 @@ header{
   -webkit-border-radius: 15px;
   padding-bottom: 1.5%;
 }
+
+.ap-space{
+  width: 70%;
+  //background-color: #3f9393;
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.doublediamond{
+  position: relative;
+  width: 90%;
+  padding-top: 2%;
+  //padding-bottom: 2%;
+}
+
+.pinkcloud {
+  width: 120%;
+  position: absolute;
+  z-index: 1000;
+  margin: auto;
+  left: 0;
+}
+
 
 
 #work{
@@ -1264,10 +1314,10 @@ footer{
 
 @keyframes float3 {
   0%, 100% {
-    -moz-transform: translateX(-5px);
-    -ms-transform: translateX(-5px);
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
+    -moz-transform: translateX(-25px);
+    -ms-transform: translateX(-25px);
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
   }
   50% {
     -moz-transform: translateX(15px);
@@ -1279,10 +1329,10 @@ footer{
 
 @-moz-keyframes float3 {
   0%, 100% {
-    -moz-transform: translateX(-5px);
-    -ms-transform: translateX(-5px);
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
+    -moz-transform: translateX(-25px);
+    -ms-transform: translateX(-25px);
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
   }
   50% {
     -moz-transform: translateX(15px);
@@ -1294,10 +1344,10 @@ footer{
 
 @-webkit-keyframes float3 {
   0%, 100% {
-    -moz-transform: translateX(-5px);
-    -ms-transform: translateX(-5px);
-    -webkit-transform: translateX(-5px);
-    transform: translateX(-5px);
+    -moz-transform: translateX(-25px);
+    -ms-transform: translateX(-25px);
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
   }
   50% {
     -moz-transform: translateX(15px);
