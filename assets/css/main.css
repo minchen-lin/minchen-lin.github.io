@@ -52,12 +52,15 @@ table {
 
 header {
   height: 100%;
-  background: url("/assets/images/starry-night-9.jpg");
-  background-color: rgba(83, 83, 83, 0.6);
+  /* background: url("/assets/images/starry-night-9.jpg"); */
+  background: url("/assets/images/starry-night-p2.jpg");
+  /* background-color: rgba(83, 83, 83, 0.6); */
   background-blend-mode: multiply;
   background-size: cover;
-  border-top: 10px solid #D2D7D3; }
+  /* border-top: 10px solid #D2D7D3; */
+  background-size: 100% 100%; }
 
+/* Cover cloud animation */
 .clouds {
   -webkit-animation: animateBackground 25s linear 2s infinite;
   -moz-animation: animateBackground 25s linear 2s infinite;
@@ -74,6 +77,7 @@ header {
   pointer-events: none;
   position: absolute;
   z-index: 1000;
+  background-size: 100% 100%;
   height: 100%;
   width: 100%;
   z-index: 3;
@@ -100,13 +104,15 @@ header {
     background-position: 0px 0px; }
   to {
     background-position: 1781px 0px; } }
+/* Cover cloud animation - END */
+
 .main-nav {
   position: fixed;
   top: 0;
   width: 100%;
   text-align: center;
   z-index: 8000;
-  trnsition: 0.7s cubic-bezier(0.77, 0, 0.175, 1); }
+  transition: 0.7s cubic-bezier(0.77, 0, 0.175, 1); }
 
 .main-nav ul {
   position: absolute;
@@ -187,13 +193,87 @@ header {
 .clear-fix {
   clear: both; }
 
-.greeting {
+/* .greeting {
   margin-top: 13em;
   width: 100%;
   height: 32%;
   min-height: 150px;
   background-color: rgba(83, 83, 83, 0.55);
-  position: relative; }
+  position: relative; } */
+
+/* test ciecle */
+  .circle2 {
+    position: relative;
+    display: block;
+    /* margin: 2em 0; */
+    margin-top: 12em;
+    background-color: transparent;
+    /* color: #e74c3c; */
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    /* margin: 64px auto; */
+    max-width: 640px;
+    width: 35%;
+    /* height: 40%; */
+    box-sizing: border-box;
+  }
+  
+  .circle2:after {
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: rgb(91, 89, 94);
+    content: "";
+  }
+  
+  .circle__inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .circle__wrapper {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .circle__content {
+    display: table-cell;
+    padding: 1em;
+    vertical-align: middle;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    margin: 0;
+    padding: 0; */
+    color: #ECF0F1;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    letter-spacing: 0.05em; 
+  }
+  
+  @media (min-width: 480px) {
+    .circle__content {
+      font-size: 2em;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .circle__content {
+      font-size: 3em;
+    }
+  }
+/* test circle_END */
 
 #hello-me {
   width: 11.7%;
@@ -208,7 +288,7 @@ header {
   margin-right: 15%;
   margin-top: -2%; }
 
-.center {
+/* .center {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -220,7 +300,7 @@ header {
   font-family: 'Amatic SC', cursive;
   font-weight: 700;
   font-size: 3.5em;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.05em; } */
 
 .getstart {
   position: absolute;
