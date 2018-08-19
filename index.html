@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="assets/css/main.css"/>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/js/index.js"></script>
@@ -12,11 +13,10 @@
 
 <header>
     <div style='overflow:hidden'></div>
-    <!-- <div class="greeting">
-        <h1 class="center">Hello, I am Minchen. <br> An UXUI & Service Designer!</h1>
-        <img id="hello-me" src="assets/images/hello-20.gif" alt="say hello">
-        <img id="hello-p" src="assets/images/plant-1.png">
-    </div> -->
+    <img id="hello-me" src="assets/images/hello-20.gif" alt="say hello">
+    <!-- <img id="hello-p" src="assets/images/Planet - gray.svg"> -->
+    <img id="hello-p2" src="assets/images/Planet - pink.svg">
+    <img id="hello-p3" src="assets/images/Planet - tri.svg">
     <!-- try circle -->
     <div class="circle2">
         <div class="circle__inner">
@@ -26,6 +26,7 @@
         </div>
     </div>
     <!-- try circle_END -->
+     
     <div class="getstart">
         <p class="clicker">Learn more about what I do</p>
 
@@ -35,6 +36,7 @@
             </a>
         </div>
     </div>
+    <div class="stars"></div>
     <div class="clouds"></div>
 </header>
 
@@ -54,8 +56,9 @@
 </div>
 
 <section id="about">
-    <h1 class="title">ABOUT ME</h1>
-    <img class="coon2 " src="assets/images/coon.gif">
+    <h1 class="title">ABOUT ME</h1>&nbsp; 
+    <img class="coon2 " src="assets/images/Racoon-8.gif">
+    <img id="about-love" src="assets/images/Heart-8.gif">
     <div class="ab intro">
         <p class="intro-bk">
             I am Minchen Lin, the UXUI and Service Design lover with 3 years of practical experience in this field. I have great experience in User Research, Business Model Analysis, UXUI and Service Design.
@@ -72,19 +75,18 @@
     <!--</div>-->
     <div class="ability">
         <div class="skill tool">
-            <img class="plant" src="assets/images/1planet.png" width="40%">
+            <img class="planet" src="assets/images/1planet.png" width="40%">
 
             <p class="subtitle">TOOLS I USE</p>
+            <img class="round" src="assets/images/tool/axure.png" title="Axure">
+            <img class="round" src="assets/images/tool/balaicon.png" title="Balsamiq Mockups">
             <img class="round" src="assets/images/tool/ai.png" title="Illustrator">
             <img class="round" src="assets/images/tool/ps.png" title="Photoshop">
-            <img class="round" src="assets/images/tool/balaicon.png" title="Balsamiq Mockups">
             <img class="round" src="assets/images/tool/css.png" title="CSS">
             <img class="round" src="assets/images/tool/html.png" title="Html">
-            <img class="round" src="assets/images/tool/java.png" title="JAVA">
-            <img class="round" src="assets/images/tool/SPSS.png" title="SPSS">
         </div>
         <div class="skill speak">
-            <img class="plant" src="assets/images/2planet.png" width="40%">
+            <img class="planet" src="assets/images/2planet.png" width="40%">
 
             <p class="subtitle">LANGUAGES I SPEAK</p>
             <img class="sp flag" src="assets/images/language/Taiwan.png" title="Mandarin" width="15%">
@@ -106,25 +108,46 @@
 
             <div class="sp circle"></div>
             <div class="sp circle"></div>
-            <div class="sp circle semi"></div>
             <br>
         </div>
         <div class="skill habit">
-            <img class="plant" src="assets/images/3planet.png" width="40%">
-
+            <img class="planet" src="assets/images/3planet.png" width="40%">
             <p class="subtitle">STUFF I LIKE</p>
-            <img class="like" src="assets/images/habit/paint1.png" title="Illustration">
+                  
+            <div class="sticker-bg animate">
+            <div class="sticker1">
+                <img class="sticker_content" src="assets/images/habit/edit.svg" width="13%">&nbsp; 
+                <span class="sticker_content"><a href="illustration.html" target="_blank" style="text-decoration:none">Drawing</a>
+            </div>
+            </div>
+            <br />
+            <div class="sticker2">
+                <img class="sticker_content" src="assets/images/habit/books.svg" width="13%">&nbsp; 
+                <span class="sticker_content">Reading
+            </div>
+            <br />
+            <div class="sticker2">
+                <img class="sticker_content" src="assets/images/habit/world.svg" width="13%">&nbsp; 
+                <span class="sticker_content">Traveling
+            </div>
+            <br />
+            <div class="sticker2">
+                <img class="sticker_content" src="assets/images/habit/bicycle.svg" width="13%">&nbsp; 
+                <span class="sticker_content">Biking
+            </div>   
+        
+            <!-- <img class="like" src="assets/images/habit/paint1.png" title="Illustration">
             <img class="ch-like" src="assets/images/habit/travel.png">
             <img class="like" src="assets/images/habit/drama1.png" title="Improvisational Theatre"> <br>
             <img class="ch-like" id="paint" src="assets/images/habit/paint.png">
             <img class="like" src="assets/images/habit/luggage.png" title="Traveling">
-            <img class="ch-like" src="assets/images/habit/drama.png">
-        </div>
-    </div>
+            <img class="ch-like" src="assets/images/habit/drama.png"> -->
+        
+    
 </section>
 
 <section id="approach">
-    <h1 class="wtitle">My Approach</h1>
+    <h1 class="wtitle">My Approach</h1> 
 
     <div class="ab intro">
         <p class="ap-intro">
@@ -503,7 +526,7 @@
             </div>
             <figure>
                 <img src="assets/images/projects/F2.jpg" style="width: 100%">
-                <iframe style="padding-top: 20px;" src="https://player.vimeo.com/video/103599926" width=800" height="380" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <iframe style="padding-top: 20px;" src="https://player.vimeo.com/video/103599926" width="800" height="380" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </figure>
             <div class="p-content">
 
@@ -599,11 +622,11 @@
 
 <footer>
     <p class="sign">
-        Handmade by Minchen Lin © 2016
+        Handmade by Minchen Lin © 2018
     </p>
 </footer>
 
-<script>
+<!-- <script>
     (function (f, b, g) {
         var xo = g.prototype.open, xs = g.prototype.send, c;
         f.hj = f.hj || function () {
@@ -644,7 +667,7 @@
             };
         }
     })(window, document, window.XMLHttpRequest);
-</script>
+</script> -->
 
 </body>
 </html>
