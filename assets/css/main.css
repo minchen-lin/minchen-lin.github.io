@@ -809,15 +809,22 @@ a:active{
   -webkit-border-radius: 15px;
   padding-bottom: 1.5%; }
 
-.ap-space {
-  /* float: left; */
+/* .ap-space {
+  float: left;
   margin-left:25%;
   margin-right:25%;
   width: 70%;
   position: relative;
   margin: auto;
   top: 40%;
-}
+} */
+
+.ap-space {
+  width: 70%;
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%); }
 
 /* circle positoin */
 .doublediamond-left, .doublediamond-right {
