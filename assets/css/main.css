@@ -4,8 +4,9 @@
 @import url(https://fonts.googleapis.com/css?family=Armata);
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
-/* @import "compass/css3";
-@import "bourbon"; */
+@import "compass/css3";
+/* @import "bourbon"; */
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -873,10 +874,10 @@ a:active{
   display: none;
 }
 
-/* .doublediamond {
+.doublediamond {
   position: relative;
   width: 90%;
-  padding-top: 2%; } */
+  padding-top: 2%; }
 
 .pinkcloud {
   width: 120%;
@@ -884,8 +885,9 @@ a:active{
   z-index: 1000;
   margin: auto;
   left: 0;
-  top: 0;
-  bottom: 0; }
+  /* top: 0;
+  bottom: 0; */
+ }
 
 #work {
   height: 100vh;
