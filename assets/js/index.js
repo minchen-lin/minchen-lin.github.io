@@ -84,5 +84,29 @@ $(function () {
         })
       })
 
+    //pre-fade   
+    $('.skill').fadeTo(0, 0);
+    $('.workspace li').fadeTo(0, 0);
+
+    //fade animation
+    $(document).on('scroll', function() {
+        var currentScrollPosition = $(this).scrollTop();
+        var clickerPosition = $('.clicker').offset().top;
+        var myWorkPosition = $('#work').offset().top;
+
+        if (currentScrollPosition > clickerPosition) {
+            $('.skill').each(function(index) {
+                var t = $(this);
+                setTimeout(function(){ t.addClass('animated fadeIn'); }, (index) * 300);
+            });
+        }
+
+        if (currentScrollPosition > myWorkPosition) {
+            $('.workspace li').each(function(index) {
+                var t = $(this);
+                setTimeout(function(){ t.addClass('animated fadeIn'); }, (index) * 300);
+            });
+        }
+    });
 
 });
