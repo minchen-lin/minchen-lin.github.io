@@ -216,7 +216,7 @@ a:active{
   content: '';
   display: block;
   background: rgba(255, 255, 255, 0.9);
-  margin-top: -80px;
+  margin-top: -90px;
   -webkit-transition: 0.4s cubic-bezier(0.77, 0, 0.175, 1);
   transition: 0.4s cubic-bezier(0.77, 0, 0.175, 1); }
 
