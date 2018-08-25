@@ -1,4 +1,5 @@
 $(function () {
+    //autoscroll animation
     $("a[href^=#]").not(".open").on("click", function (e) {
         var targetElement = $(this.hash);
         $('html,body').animate({
@@ -88,11 +89,22 @@ $(function () {
     $('.skill').fadeTo(0, 0);
     $('.workspace li').fadeTo(0, 0);
 
+    // re-size circle 
+    $('.circles img').each(function() {
+        $(this).on('load', function() {
+            var width = $(this).width();
+            var height = $(this).height();
+            $(this).width(width/1.5);
+            $(this).height(height/1.5);
+        });
+    })
+
     //fade animation
     $(document).on('scroll', function() {
         var currentScrollPosition = $(this).scrollTop();
         var clickerPosition = $('.clicker').offset().top;
         var myWorkPosition = $('#work').offset().top;
+        var approachPosition = $('#approach').offset().top;
 
         if (currentScrollPosition > clickerPosition) {
             $('.skill').each(function(index) {
@@ -107,6 +119,26 @@ $(function () {
                 setTimeout(function(){ t.addClass('animated fadeIn'); }, (index) * 300);
             });
         }
+    
+     //circle animation
+        if (currentScrollPosition > approachPosition) {
+            $('.doublediamond-left').each(function(index) {
+                var t = $(this);
+                setTimeout(function(){
+                    t.css('display', 'block');
+                    t.addClass('animated bounceInLeft');
+                }, (index) * 200);
+            });
+            $('.doublediamond-right').each(function(index) {
+                var t = $(this);
+                setTimeout(function(){
+                    t.css('display', 'block');
+                    t.addClass('animated bounceInRight');
+                }, (index) * 200);
+            });
+        };
     });
+
+    
 
 });

@@ -1,46 +1,52 @@
-
 @import url('https://fonts.googleapis.com/css?family=Mr+Dafoe');
 @import url('https://fonts.googleapis.com/css?family=Cousine|Cutive+Mono|Lekton');
-
-body, html {
+body,
+html {
   /* cursor: url('https://ionicframework.com/img/finger.png'), auto;} */
-  cursor: url('../images/C2-2.png') 32 32; }
-  
+  cursor: url('../images/C2-2.png') 32 32;
+}
 
-  .scrolling-wrapper {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    height:85%;}
-    
-  .card {
-    display: inline-block;
-    height:80%;}
-      
-  .header{
-   width:100%;
-   margin:0%;}
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: 85%;
+}
 
-  h1 {
-    font-family: 'Mr Dafoe', cursive;
-    font-size: 2em;
-    font-weight: 500;
-    padding-left: 1.5em;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    color:#778ca3;
-    margin:0%;}
+.card {
+  display: inline-block;
+  height: 80%;
+}
 
-  .scrolling-wrapper{
-    -webkit-overflow-scrolling: touch;}
-  
-  .footer{
-    display: inline-block;
-    width: 100%;
-    height:5%;}
+.header {
+  width: 100%;
+  margin: 0%;
+}
 
-  p{
-    font-family: 'Cousine', monospace;
-    font-size:0.5em;
-    margin-left:1.5em;
-    color:#49565f;}
+h1 {
+  font-family: 'Mr Dafoe', cursive;
+  font-size: 2em;
+  font-weight: 500;
+  padding-left: 1.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  color: #778ca3;
+  margin: 0%;
+}
+
+.scrolling-wrapper {
+  -webkit-overflow-scrolling: touch;
+}
+
+.footer {
+  display: inline-block;
+  width: 100%;
+  height: 5%;
+}
+
+p {
+  font-family: 'Cousine', monospace;
+  font-size: 0.5em;
+  margin-left: 1.5em;
+  color: #49565f;
+}
