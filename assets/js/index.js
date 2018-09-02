@@ -59,82 +59,99 @@ $(function () {
 
     });
 
-    $('.sticker-bg').on('click', function() {
+    $('.sticker-bg').on('click', function () {
         window.open('/illustration.html')
     });
 
-    
+    // Firefox 1.0+
+    var isFirefox = typeof InstallTrigger !== 'undefined';
+
+    // Safari 3.0+ "[object HTMLElementConstructor]"
+    var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) {
+        return p.toString() === "[object SafariRemoteNotification]";
+    })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
     //cover star animation
-    $(document).ready(function(){
-        var stars=800;
-        var $stars=$(".stars");
-        var r=800;
-        for(var i=0;i<stars;i++){
-          var $star=$("<div/>").addClass("star");
-          $stars.append($star);
-        }
-        $(".star").each(function(){
-          var cur=$(this);
-          var s=0.2+(Math.random()*1);
-          var curR=r+(Math.random()*300);
-          cur.css({ 
-            transformOrigin:"0 0 "+curR+"px",
-            transform:" translate3d(0,0,-"+curR+"px) rotateY("+(Math.random()*360)+"deg) rotateX("+(Math.random()*-50)+"deg) scale("+s+","+s+")"
-             
-          })
+    if (isFirefox || isSafari) {
+        $('.stars').hide();
+        particlesJS.load('particles-js', 'assets/js/particles.json');
+    } else {
+        $('#particles-js').hide();
+        $(document).ready(function () {
+            var stars = 800;
+            var $stars = $(".stars");
+            var r = 800;
+            for (var i = 0; i < stars; i++) {
+                var $star = $("<div/>").addClass("star");
+                $stars.append($star);
+            }
+            $(".star").each(function () {
+                var cur = $(this);
+                var s = 0.2 + (Math.random() * 1);
+                var curR = r + (Math.random() * 300);
+                cur.css({
+                    transformOrigin: "0 0 " + curR + "px",
+                    transform: " translate3d(0,0,-" + curR + "px) rotateY(" + (Math.random() * 360) + "deg) rotateX(" + (Math.random() * -50) + "deg) scale(" + s + "," + s + ")"
+
+                })
+            })
         })
-      })
+    }
 
     //pre-fade   
     $('.skill').fadeTo(0, 0);
     $('.workspace li').fadeTo(0, 0);
 
 
-   
+
 
     // re-size circle 
-    $('.circles img').each(function() {
-        $(this).on('load', function() {
+    $('.circles img').each(function () {
+        $(this).on('load', function () {
             var width = $(this).width();
             var height = $(this).height();
-            $(this).width(width/1.5);
-            $(this).height(height/1.5);
+            $(this).width(width / 1.5);
+            $(this).height(height / 1.5);
         });
     })
 
     //fade animation
-    $(document).on('scroll', function() {
+    $(document).on('scroll', function () {
         var currentScrollPosition = $(this).scrollTop();
         var clickerPosition = $('.clicker').offset().top;
         var approachcontentPosition = $('.desc-content').offset().top;
         var approachPosition = $('#approach').offset().top;
 
         if (currentScrollPosition > clickerPosition) {
-            $('.skill').each(function(index) {
+            $('.skill').each(function (index) {
                 var t = $(this);
-                setTimeout(function(){ t.addClass('animated fadeIn'); }, (index) * 300);
+                setTimeout(function () {
+                    t.addClass('animated fadeIn');
+                }, (index) * 300);
             });
         }
 
         if (currentScrollPosition > approachcontentPosition) {
-            $('.workspace li').each(function(index) {
+            $('.workspace li').each(function (index) {
                 var t = $(this);
-                setTimeout(function(){ t.addClass('animated fadeIn'); }, (index) * 300);
+                setTimeout(function () {
+                    t.addClass('animated fadeIn');
+                }, (index) * 300);
             });
         }
-    
-     //circle animation
+
+        //circle animation
         if (currentScrollPosition > approachPosition) {
-            $('.doublediamond-left').each(function(index) {
+            $('.doublediamond-left').each(function (index) {
                 var t = $(this);
-                setTimeout(function(){
+                setTimeout(function () {
                     t.css('display', 'block');
                     t.addClass('animated bounceInLeft');
                 }, (index) * 200);
             });
-            $('.doublediamond-right').each(function(index) {
+            $('.doublediamond-right').each(function (index) {
                 var t = $(this);
-                setTimeout(function(){
+                setTimeout(function () {
                     t.css('display', 'block');
                     t.addClass('animated bounceInRight');
                 }, (index) * 200);
@@ -142,6 +159,6 @@ $(function () {
         };
     });
 
-    
+
 
 });
