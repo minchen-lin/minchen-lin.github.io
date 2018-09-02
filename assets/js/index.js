@@ -89,6 +89,9 @@ $(function () {
     $('.skill').fadeTo(0, 0);
     $('.workspace li').fadeTo(0, 0);
 
+
+   
+
     // re-size circle 
     $('.circles img').each(function() {
         $(this).on('load', function() {
@@ -103,7 +106,7 @@ $(function () {
     $(document).on('scroll', function() {
         var currentScrollPosition = $(this).scrollTop();
         var clickerPosition = $('.clicker').offset().top;
-        var myWorkPosition = $('#work').offset().top;
+        var approachcontentPosition = $('.desc-content').offset().top;
         var approachPosition = $('#approach').offset().top;
 
         if (currentScrollPosition > clickerPosition) {
@@ -113,7 +116,7 @@ $(function () {
             });
         }
 
-        if (currentScrollPosition > myWorkPosition) {
+        if (currentScrollPosition > approachcontentPosition) {
             $('.workspace li').each(function(index) {
                 var t = $(this);
                 setTimeout(function(){ t.addClass('animated fadeIn'); }, (index) * 300);
