@@ -4,7 +4,6 @@
 @import url(https://fonts.googleapis.com/css?family=Armata);
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:400,700);
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
-@import "compass/css3";
 /* @import "bourbon"; */
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -153,6 +152,8 @@ header {
   background-size: cover;
   /* border-top: 10px solid #D2D7D3; */
   background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .sticker-bg:hover a.secondpagelink {
