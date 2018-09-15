@@ -106,15 +106,31 @@ $(function () {
 
 
     // re-size circle 
+    function getRatio() {
+        return 1.5 * (1280 / $('html').width());
+    }
+    $('.circles').data('ratio', getRatio());
     $('.circles img').each(function () {
+        var ratio = $('.circles').data('ratio');
         $(this).on('load', function () {
             var width = $(this).width();
             var height = $(this).height();
-            var ratio = 1.5 * (1280 / $('html').width());
             $(this).width(width / ratio);
             $(this).height(height / ratio);
         });
-    })
+    });
+
+    $(window).on('resize', function() {
+        var newRatio = getRatio();
+        $('.circles img').each(function () {
+            var ratio = $('.circles').data('ratio');
+            var width = $(this).width();
+            var height = $(this).height();
+            $(this).width(width * ratio / newRatio);
+            $(this).height(height * ratio / newRatio);
+        });
+        $('.circles').data('ratio', newRatio);
+    });
 
     //fade animation
     $(document).on('scroll', function () {
