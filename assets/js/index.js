@@ -110,8 +110,9 @@ $(function () {
         $(this).on('load', function () {
             var width = $(this).width();
             var height = $(this).height();
-            $(this).width(width / 1.5);
-            $(this).height(height / 1.5);
+            var ratio = 1.5 * (1280 / $('html').width());
+            $(this).width(width / ratio);
+            $(this).height(height / ratio);
         });
     })
 
@@ -145,14 +146,14 @@ $(function () {
             $('.doublediamond-left').each(function (index) {
                 var t = $(this);
                 setTimeout(function () {
-                    t.css('display', 'block');
+                    t.css('visibility', 'visible');
                     t.addClass('animated bounceInLeft');
                 }, (index) * 200);
             });
             $('.doublediamond-right').each(function (index) {
                 var t = $(this);
                 setTimeout(function () {
-                    t.css('display', 'block');
+                    t.css('visibility', 'visible');
                     t.addClass('animated bounceInRight');
                 }, (index) * 200);
             });

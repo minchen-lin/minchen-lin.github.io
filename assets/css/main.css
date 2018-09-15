@@ -1134,55 +1134,55 @@ s .ab {
 #circle1 {
   z-index: 1;
   left: 0%;
-  display: none;
+  visibility: hidden;
 }
 
 #circle2 {
   z-index: 2;
   left: 4%;
-  display: none;
+  visibility: hidden;
 }
 
 #circle3 {
   z-index: 3;
   left: 15%;
-  display: none;
+  visibility: hidden;
 }
 
 #circle4 {
   z-index: 4;
   left: 27%;
-  display: none;
+  visibility: hidden;;
 }
 
 #circle5 {
   z-index: 5;
   left: 34%;
-  display: none;
+  visibility: hidden;;
 }
 
 #circle6 {
   z-index: 6;
   left: 40%;
-  display: none;
+  visibility: hidden;
 }
 
 #circle7 {
   z-index: 7;
   left: 47%;
-  display: none;
+  visibility: hidden;
 }
 
 #circle8 {
   z-index: 8;
   left: 63%;
-  display: none;
+  visibility: hidden;
 }
 
 #circle9 {
   z-index: 9;
   left: 74%;
-  display: none;
+  visibility: hidden;
 }
 
 /* .doublediamond {
