@@ -1675,12 +1675,14 @@ figcaption {
   transform: translateX(-50%) translateY(-50%);
 }
 
+
 .col-lg-12 a#mailaccount {
   position: absolute;
   border-radius: 10px;
   top: 18%;
   left: 50%;
   background-color: #FF7B69;
+  box-shadow: 0px 6px #bf4336, 0px 4px 10px rgba(0, 0, 0, 0.3);
   color: white;
   padding: 15px;
   font-family: 'Armata', sans-serif;
@@ -1703,12 +1705,20 @@ figcaption {
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-}
+} 
 
 .col-lg-12 a#mailaccount:hover {
-  background-color: transparent;
-  color: #FF7B69;
-}
+  background-color: #FC877C;
+  color: white;
+} 
+
+.col-lg-12 a#mailaccount:active {
+  top: 18.5%;
+  background-color: #FC877C;
+  color: white;
+  box-shadow: 0px 0px #bf4336, 0px 4px 10px rgba(0, 0, 0, 0.3);
+} 
+
 
 footer {
   width: 100%;
