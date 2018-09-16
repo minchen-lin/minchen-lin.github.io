@@ -2,20 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Cousine|Cutive+Mono|Lekton');
 body,
 html {
-  /* cursor: url('https://ionicframework.com/img/finger.png'), auto;} */
-  cursor: url('../images/C2-2.png') 32 32;
-}
+  cursor: url('https://ionicframework.com/img/finger.png'), auto;}
+  /* cursor: url('../images/C2-2.png') 32 32; */
+
 
 .scrolling-wrapper {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  height: 85%;
+  height: 88%;
 }
 
 .card {
   display: inline-block;
-  height: 80%;
+  height: 100%;
 }
 
 .header {
@@ -39,14 +39,15 @@ h1 {
 }
 
 .footer {
-  display: inline-block;
+  /* display: inline-block; */
   width: 100%;
-  height: 5%;
+  height: 1%;
 }
 
 p {
   font-family: 'Cousine', monospace;
-  font-size: 0.5em;
-  margin-left: 1.5em;
+  font-size: 0.7em;
+  margin-right: 0.3em;
+  text-align: right;
   color: #49565f;
 }
