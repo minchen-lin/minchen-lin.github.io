@@ -684,11 +684,8 @@ s .ab {
 }
 
 .intro {
-  width: 62%;
-  height: 20%;
-  margin-top:1%;
-  margin-left: 0;
-  padding-left: 19%;
+  width: 73%;
+  margin: 0 auto;
   font-family: 'Armata', sans-serif;
   font-weight: 400;
   font-size: 0.88em;
@@ -1628,7 +1625,7 @@ figcaption {
 }
 
 .contact-title {
-  height: 45%;
+  height: 40%;
   position: relative;
 }
 
@@ -1642,18 +1639,19 @@ figcaption {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 5vh;
+  bottom: 1%;
 }
 
 .contact-bg {
   padding-top: 2vh;
   width: 100%;
-  height: 55%;
+  height: 60%;
   position: relative;
   background: url(/assets/images/background/mountain.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
+  bottom:0;
   
 }
 
@@ -1668,14 +1666,14 @@ figcaption {
   line-height: 1.5em;
   margin: auto;
   text-align: center;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%);
 }
 
 
 .col-lg-12 a#mailaccount {
   position: absolute;
   border-radius: 10px;
-  top: 18%;
+  bottom: 65%;
   left: 50%;
   background-color: #FF7B69;
   box-shadow: 0px 6px #bf4336, 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -1740,21 +1738,24 @@ footer {
 }
 
 .astronaut {
-  width: 12.5%;
+  position: absolute;
+  width: 14%;
   height: auto;
   margin-left: 8%;
-  margin-top: 8%;
+  margin-top: 10%;
 }
 
 .planet-double {
-  width: 4.5%;
+  position: absolute;
+  width: 5%;
   height: auto;
-  margin-left: 25%;
-  margin-bottom: 5%;
+  margin-left: 20%;
+  bottom: 60%;
 }
 
 .coon {
-  width: 12%;
+  position: absolute;
+  width: 13%;
   height: auto;
   margin-left: 75%;
   margin-bottom: 2%;
