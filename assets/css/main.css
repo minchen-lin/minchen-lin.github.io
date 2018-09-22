@@ -511,6 +511,32 @@ a.secondpagelink:active {
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7), rgba(247, 143, 170, 0.7));
 }
 
+.hello-heart {
+  position: absolute;
+  float: left;
+  width: 2.5%;
+  height: auto;
+  margin-left: 33%;
+  margin-top: 18.5%;
+  z-index: 5;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7), rgba(245, 245, 234, 0.63));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7), rgba(247, 143, 170, 0.7));
+}
+
+.hello-heart2 {
+  position: absolute;
+  width: 2.5%;
+  height: auto;
+  left: 65%;
+  margin-top: 30%;
+  -ms-transform: rotate(30deg); /* IE 9 */
+  -webkit-transform: rotate(30deg); /* Safari 3-8 */
+  transform: rotate(30deg);
+  z-index: 5;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7), rgba(245, 245, 234, 0.63));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7), rgba(247, 143, 170, 0.7));
+}
+
 #hello-p {
   width: 10%;
   height: auto;
@@ -529,11 +555,11 @@ a.secondpagelink:active {
   height: auto;
   float: right;
   margin-right: 17%;
-  margin-top: 12%;
+  margin-top: 8%;
   z-index: 2;
   /* -webkit-filter: drop-shadow(0px 0px 80px 0px rgba(183, 176, 130, 0.6));
   filter: drop-shadow(0px 0px 80px 0px rgba(183, 176, 130, 0.6)); */
-  opacity: 0.8;
+  opacity: 0.6;
   filter: alpha(opacity=80);
 }
 
@@ -542,11 +568,13 @@ a.secondpagelink:active {
   height: auto;
   float: right;
   margin-right: -15%;
-  margin-top: 20%;
+  margin-top: 16%;
   z-index: 2;
   opacity: 0.6;
   filter: alpha(opacity=60);
 }
+
+
 
 /* .center {
   position: absolute;
@@ -679,9 +707,10 @@ a.secondpagelink:active {
 #about-love {
   position: absolute;
   width: 20%;
-  margin-top: 4%;
+  margin-top: 3.5%;
   height: auto;
   margin-left: 76%;
+  /* z-index: 100; */
 }
 
 s .ab {
@@ -1278,19 +1307,30 @@ s .ab {
 }
 
 .rocket {
-  width: 8%;
+  width: 11%;
   height: auto;
   position: absolute;
-  margin-left: 10%;
-  margin-top: 6%;
+  margin-left: 2%;
+  margin-top: 5%;
 }
+
+.UFO {
+  width: 8.8%;
+  height: auto;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 35%;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(245, 239, 151, 0.7), rgba(245, 245, 234, 0.63));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7), rgba(247, 143, 170, 0.7));
+}
+
 
 .earth {
   width: 6%;
   height: auto;
   position: absolute;
   margin-left: 90%;
-  margin-top: 25%;
+  margin-top: 20%;
 }
 
 .workspace {
