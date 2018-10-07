@@ -341,7 +341,7 @@ a.secondpagelink:active {
   font-family: 'Amatic SC', cursive;
   display: inline-block;
   text-decoration: none;
-  font-size :2vw;
+  font-size :1.8vw;
   font-weight: 1000;
   letter-spacing: 0.05em;
   margin-left: 1.5em;
@@ -349,6 +349,10 @@ a.secondpagelink:active {
   color: #22313F;
   -webkit-transition: .1s;
   transition: .1s;
+}
+
+.navicon{
+  width: 1.5vw;
 }
 
 .main-nav ul li a.sectionlink:active,
@@ -734,13 +738,13 @@ s .ab {
 
 .intro {
   color: #2C3A47;
-  width: 75vw;
+  width: 72vw;
   height: 15vh;
   margin: 0 auto;
   font-family: 'Inconsolata', monospace;
   /* font-family: 'Armata', sans-serif; */
   font-weight: 800;
-  font-size: 1.35vw;
+  font-size: 1.3vw;
   line-height: 1.5em;
   letter-spacing: 0.03em;
   text-align: center;
@@ -774,9 +778,9 @@ s .ab {
   position: relative;
   text-align: center;
   height: 13vh;
-  font-weight: 700;
-  font-size: 3em;
-  letter-spacing: 0.08em;
+  font-weight: 1000;
+  font-size: 3vw;
+  letter-spacing: 0.05em;
   margin: 0;
   padding-top: 5%;
   /* position: absolute; */
@@ -1270,9 +1274,10 @@ s .ab {
 
 .desc-subtitle {
   color: #28224d;
-  font-family: 'Amatic SC', cursive;
-  font-size: 1.5em;
-  font-weight: 900;
+  /* font-family: 'Amatic SC', cursive; */
+  font-family: 'Armata', sans-serif;
+  font-size: 1.15vw;
+  font-weight: bolder;
   letter-spacing: 0.05em;
   padding-bottom: 5px;
 }
@@ -1306,16 +1311,21 @@ s .ab {
 }
 
 .desc-content {
-  color: #222222;
-  font-family: 'Armata', sans-serif;
+  color: #2C3A47;
+  /* font-family: 'Armata', sans-serif; */
+  font-family: 'Inconsolata', monospace;
+  font-weight: 800;
+  font-size: 1vw;
+  line-height: 1.4em;
+  /* letter-spacing: 0.03em; */
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
-  font-weight: 350;
+  /* font-weight: 350;
   font-size: 0.75em;
-  line-height: 1.4em;
+  line-height: 1.4em; */
 }
 
 #work {
@@ -1325,7 +1335,7 @@ s .ab {
 }
 
 .rocket {
-  width: 11%;
+  width: 10vw;
   height: auto;
   position: absolute;
   margin-left: 2%;
@@ -1337,7 +1347,7 @@ s .ab {
   height: auto;
   position: absolute;
   margin-left: 6%;
-  margin-top: 35%;
+  margin-top: 38%;
   -webkit-filter: drop-shadow(12px 12px 7px rgba(245, 239, 151, 0.7), rgba(245, 245, 234, 0.63));
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7), rgba(247, 143, 170, 0.7));
 }
@@ -1346,13 +1356,13 @@ s .ab {
   width: 6%;
   height: auto;
   position: absolute;
-  margin-left: 92%;
-  margin-top: 18%
+  margin-left: 90%;
+  margin-top: 15%
 }
 
 .workspace {
   /* background-color: #24527a; */
-  height: 70vh;
+  height: 75vh;
   width: 85vw;
   display: flex;
   margin: auto;
@@ -1375,8 +1385,8 @@ s .ab {
 .workspace li {
   width: 18vw;
   height: 18vw;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 430px;
+  max-height: 430px;
   display: inline-block;
   text-align: center;
 }
@@ -1707,9 +1717,9 @@ figcaption {
 .title2 {
   color: #ECECEC;
   font-family: 'Amatic SC', cursive;
-  font-weight: 700;
-  font-size: 3em;
-  letter-spacing: 0.09em;
+  font-weight: 1000;
+  font-size: 3.5vw;
+  letter-spacing: 0.05em;
   text-align: center;
   position: absolute;
   left: 0;
@@ -1732,12 +1742,14 @@ figcaption {
 
 .contact-intro {
   position: absolute;
-  width: 50%;
+  width: 55vw;
   left: 50%;
   color: #ECECEC;
-  font-family: 'Armata', sans-serif;
-  font-weight: 400;
-  font-size: 1em;
+  /* font-family: 'Armata', sans-serif; */
+  font-family: 'Inconsolata', monospace;
+  font-weight: 800;
+  font-size: 1.32vw;
+  letter-spacing: 0.05em;
   line-height: 1.5em;
   margin: auto;
   text-align: center;
@@ -1750,20 +1762,21 @@ figcaption {
   border-radius: 10px;
   bottom: 65%;
   left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   background-color: #FF7B69;
   box-shadow: 0px 6px #bf4336, 0px 4px 10px rgba(0, 0, 0, 0.3);
   color: white;
   padding: 15px;
   font-family: 'Armata', sans-serif;
-  font-size: 1em;
+  font-size: 1.2vw;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-decoration: none;
   display: block;
   text-align: center;
-  font-weight: 500;
-  width: 200px;
-  margin-left: -110px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  width: 25vw;
   -webkit-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -1832,7 +1845,7 @@ footer {
   position: absolute;
   width: 13%;
   height: auto;
-  margin-left: 75%;
+  margin-left: 78%;
   margin-bottom: 2%;
 }
 
