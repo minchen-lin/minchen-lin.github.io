@@ -779,15 +779,18 @@ s .ab {
 .wtitle2 {
   color: #ECECEC;
   font-family: 'Amatic SC', cursive;
+  position: relative;
+  text-align: center;
+  height: 13vh;
   font-weight: 700;
   font-size: 3em;
   letter-spacing: 0.08em;
   margin: 0;
   padding-top: 5%;
-  position: absolute;
-  left: 50%;
-  z-index: 3000;
-  transform: translate(-50%, 0);
+  /* position: absolute; */
+  /* left: 50%; */
+  z-index: 2;
+  /* transform: translate(-50%, 0); */
 }
 
 .subtitle {
@@ -1346,23 +1349,34 @@ s .ab {
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7), rgba(247, 143, 170, 0.7));
 }
 
-
 .earth {
   width: 6%;
   height: auto;
   position: absolute;
-  margin-left: 90%;
-  margin-top: 20%;
+  margin-left: 92%;
+  margin-top: 18%
 }
 
 .workspace {
+  /* background-color: #24527a; */
+  height: 70vh;
+  width: 85vw;
+  display: flex;
   margin: auto;
-  padding-top: 20vh;
-  list-style: none;
-  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+
+.block{
+  /* background-color: #dddddd; */
+  display: inline-block;
+  margin-left:2%;
+  margin-right:2%;
+  flex: 1 1 22vw;
   text-align: center;
-  width: 80%;
-  height: 60%;
 }
 
 .workspace li {
@@ -1370,9 +1384,6 @@ s .ab {
   height: 18vw;
   max-width: 300px;
   max-height: 300px;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 5%;
   display: inline-block;
   text-align: center;
 }
