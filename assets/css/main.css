@@ -1741,9 +1741,7 @@ figcaption {
 }
 
 .contact-intro {
-  position: absolute;
   width: 55vw;
-  left: 50%;
   color: #ECECEC;
   /* font-family: 'Armata', sans-serif; */
   font-family: 'Inconsolata', monospace;
@@ -1753,30 +1751,26 @@ figcaption {
   line-height: 1.5em;
   margin: auto;
   text-align: center;
-  transform: translateX(-50%);
+  padding-bottom: 2vw;
 }
 
-
 .col-lg-12 a#mailaccount {
-  position: absolute;
   border-radius: 10px;
-  bottom: 65%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  margin: auto;
   background-color: #FF7B69;
   box-shadow: 0px 6px #bf4336, 0px 4px 10px rgba(0, 0, 0, 0.3);
   color: white;
-  padding: 15px;
+  padding: 0.9vw;
   font-family: 'Armata', sans-serif;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 0.05em;
   text-decoration: none;
   display: block;
   text-align: center;
   font-weight: 800;
-  letter-spacing: 0.1em;
   width: 25vw;
+  height: 3vw;
   -webkit-transition: all .3s ease-in-out;
   -ms-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
