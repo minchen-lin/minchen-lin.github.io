@@ -1156,13 +1156,13 @@ s .ab {
 .ap-pic {
   background-color: #ECECEC;
   width: 88%;
-  height: 60%;
+  height: 65vh;
   text-align: center;
   margin: auto;
   border-radius: 15px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
-  padding-bottom: 1.5%;
+  /* padding-bottom: 1.5%; */
 }
 
 .ap-space {
@@ -1301,7 +1301,8 @@ s .ab {
 .details {
   display: inline-block;
   width: 40%;
-  height: 70%;
+  height: 100%;
+  /* height: 70%; */
   margin-left: 2%;
   margin-right: 2%;
   margin-top:2%;
