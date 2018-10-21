@@ -1547,7 +1547,7 @@ s .ab {
 }
 
 .popup {
-  width: 75vw;
+  width: 80vw;
   margin: 2.5vh auto;
   background-color: #ECECEC;
   overflow: scroll;
@@ -1559,36 +1559,36 @@ s .ab {
   z-index: 9000;
 }
 
-.innerbox {
+/* .innerbox {
   width: 75%;
   margin: 20px auto;
   background-color: #ECECEC;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-}
+} */
 
-.p-popup .innerbox .inner2box {
+/* .p-popup .innerbox .inner2box {
   position: relative;
-}
+} */
 
 .p-title {
   color: #34465d;
   font-family: 'Amatic SC', cursive;
-  font-weight: 700;
-  font-size: 2.2em;
+  font-weight: 1000;
+  font-size: 2.8vw;
   letter-spacing: 0.08em;
   margin: 0;
-  padding-top: 5%;
+  padding-top: 8%;
   text-align: center;
 }
 
 .p-title-desc {
   color: #34465d;
   font-family: 'Amatic SC', cursive;
-  font-weight: 700;
-  font-size: 1.5em;
-  letter-spacing: 0.08em;
+  font-weight: 800;
+  font-size: 2.2vw;
+  letter-spacing: 0.05em;
   margin: 0;
   text-align: center;
 }
@@ -1596,9 +1596,9 @@ s .ab {
 .p-subtitle {
   color: #9E9E9E;
   font-family: 'Armata', sans-serif;
-  font-weight: 400;
-  font-size: 1.02em;
-  letter-spacing: 0.08em;
+  font-weight: 800;
+  font-size: 1.3vw;
+  letter-spacing: 0.05em;
   margin: 0;
   text-align: center;
   padding-top: 1.2%;
@@ -1607,9 +1607,9 @@ s .ab {
 .p-aptitle {
   color: #78909C;
   font-family: 'Armata', sans-serif;
-  font-weight: 400;
-  font-size: 1.2em;
-  letter-spacing: 0.08em;
+  font-weight: 800;
+  font-size: 1.3vw;
+  letter-spacing: 0.05em;
   margin: 0;
   text-align: center;
 }
@@ -1617,9 +1617,9 @@ s .ab {
 .p-servicetitle {
   color: #3f9393;
   font-family: 'Armata', sans-serif;
-  font-weight: 400;
-  font-size: 1.05em;
-  letter-spacing: 0.08em;
+  font-weight: 800;
+  font-size: 1.3vwem;
+  letter-spacing: 0.05em;
   margin: 0;
   text-align: center;
   padding-top: 1.2%;
@@ -1627,37 +1627,55 @@ s .ab {
 
 .p-contact {
   color: #34465d;
-  font-family: 'Armata', sans-serif;
-  font-weight: 400;
-  font-size: 1em;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 1000;
+  font-size: 1.2vw;
+  line-height: 1.4em;
+  /* font-family: 'Armata', sans-serif; */
   margin: 0;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 5%;
+  padding-bottom:2%;
 }
 
 .p-abstract {
-  width: 75%;
+  width: 85%;
   margin: auto;
-  font-family: 'Armata', sans-serif;
-  font-weight: 400;
-  font-size: 0.8em;
-  line-height: 1.5em;
-  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 1000;
+  font-size: 1.2vw;
+  line-height: 1.4em;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 1%;
+
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+.p-content {
+  width: 85%;
+  margin: auto;
   text-align: center;
   padding-top: 2%;
   padding-bottom: 1%;
 }
 
-.p-content {
-  width: 80%;
-  margin: auto;
-  font-family: 'Armata', sans-serif;
-  font-weight: 400;
-  font-size: 0.8em;
-  line-height: 1.5em;
-  text-align: center;
-  padding-top: 1%;
-  padding-bottom: 1%;
+.p-content-desc{
+  padding-top:1%;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 1000;
+  font-size: 1.2vw;
+  line-height: 1.4em;
+
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 figure {
@@ -1668,24 +1686,24 @@ figure {
 }
 
 figcaption {
-  padding-top: 10px;
   text-align: center;
-  font-family: 'Armata', sans-serif;
-  font-weight: 400;
-  font-size: 0.6em;
-  padding-bottom: 2%;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 1000;
+  font-size: 1.2vw;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .close {
   border: none;
   background-color: transparent;
   position: absolute;
-  top: 17px;
+  top: 45px;
   right: 25px;
   color: #9E9E9E;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: 'Armata', sans-serif;
   font-weight: 400;
-  font-size: 1.8em;
+  font-size: 2vw;
   text-decoration: none;
   outline: none;
   cursor: pointer;
