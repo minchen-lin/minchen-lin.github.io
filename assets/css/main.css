@@ -358,7 +358,7 @@ a.secondpagelink:active {
 .main-nav ul li a.sectionlink:active,
 .main-nav ul li a.sectionlink:hover {
   color: rgb(82, 35, 51);
-  font-size: 1.8em;
+  font-size: 2vw;
   font-weight: 1000;
 }
 
@@ -777,7 +777,7 @@ s .ab {
   font-family: 'Amatic SC', cursive;
   position: relative;
   text-align: center;
-  height: 13vh;
+  height: 10vh;
   font-weight: 1000;
   font-size: 3vw;
   letter-spacing: 0.05em;
@@ -1363,7 +1363,7 @@ s .ab {
 
 .workspace {
   /* background-color: #24527a; */
-  height: 75vh;
+  height: 80vh;
   width: 85vw;
   display: flex;
   margin: auto;
@@ -1407,32 +1407,32 @@ s .ab {
 }
 
 .ch-img-1 {
-  background-image: url("/assets/images/projects/Building-cover.jpg");
+  background-image: url("/assets/images/projects/SOC2.jpg");
   background-size: contain;
 }
 
 .ch-img-2 {
-  background-image: url("/assets/images/projects/Petcare-cover.jpg");
+  background-image: url("/assets/images/projects/hacker-cover.jpg");
   background-size: contain;
 }
 
 .ch-img-3 {
-  background-image: url("/assets/images/projects/HY-cover.jpg");
+  background-image: url("/assets/images/projects/Building-cover.jpg");
   background-size: contain;
 }
 
 .ch-img-4 {
-  background-image: url("/assets/images/projects/CAT-cover.jpg");
+  background-image: url("/assets/images/projects/Petcare-cover.jpg");
   background-size: contain;
 }
 
 .ch-img-5 {
-  background-image: url("/assets/images/projects/Family-cover.jpg");
+  background-image: url("/assets/images/projects/HY-cover.jpg");
   background-size: contain;
 }
 
 .ch-img-6 {
-  background-image: url("/assets/images/projects/DT-cover.jpg");
+  background-image: url("/assets/images/projects/Family-cover.jpg");
   background-size: contain;
 }
 
@@ -1579,7 +1579,7 @@ s .ab {
   font-size: 2.8vw;
   letter-spacing: 0.08em;
   margin: 0;
-  padding-top: 8%;
+  padding-top: 6.5%;
   text-align: center;
 }
 
@@ -1661,6 +1661,13 @@ s .ab {
   margin: auto;
   text-align: center;
   padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.p-content2 {
+  width: 85%;
+  margin: auto;
+  text-align: center;
   padding-bottom: 1%;
 }
 
