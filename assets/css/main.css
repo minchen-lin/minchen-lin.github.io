@@ -596,12 +596,17 @@ a.secondpagelink:active {
   font-size: 1.2vw;
   font-weight: bold;
   letter-spacing: 0.05em;
-  margin-bottom: 1vh;
+  margin-bottom: 1.5vh;
   color: #ECF0F1;
 }
 
 .arrow {
-  padding-top: 20px;
+  /* padding-top: 20px; */
+  padding-top: 2vh;
+}
+
+.arrowsize{
+  width: 2.5vw;
 }
 
 .bounce {
@@ -895,7 +900,7 @@ s .ab {
   transform: translateY(-50%);
   color: #ffffff;
   font-weight: 300;
-  font-size: 1.6em;
+  font-size: 2vw;
   letter-spacing: 0.08em;
   font-family: 'Amatic SC', cursive;
 }
@@ -907,7 +912,7 @@ s .ab {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  width:12%;
+  width:2vw;
   margin-right:3%;
 }
 
@@ -1782,10 +1787,10 @@ figcaption {
 }
 
 .col-lg-12 a#mailaccount {
-  border-radius: 10px;
+  border-radius: 1vw;
   margin: auto;
   background-color: #FF7B69;
-  box-shadow: 0px 6px #bf4336, 0px 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1vh #bf4336, 0px 4px 10px rgba(0, 0, 0, 0.3);
   color: white;
   padding: 0.9vw;
   font-family: 'Armata', sans-serif;
