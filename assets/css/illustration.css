@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Cousine|Cutive+Mono|Lekton');
 body,
 html {
-  cursor: url('https://ionicframework.com/img/finger.png'), auto;}
+  /* cursor: url('https://ionicframework.com/img/finger.png'), auto;} */
+  cursor: url('../images/cursor-small.png'), auto; }
   /* cursor: url('../images/C2-2.png') 32 32; */
 
 
