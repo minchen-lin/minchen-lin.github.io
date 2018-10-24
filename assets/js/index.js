@@ -59,9 +59,9 @@ $(function () {
 
     });
 
-    $('.sticker-bg').on('click', function () {
-        window.open('/illustration.html')
-    });
+    // $('.sticker-bg').on('click', function () {
+    //     window.open('/illustration.html')s
+    // });
 
     // Firefox 1.0+
     var isFirefox = typeof InstallTrigger !== 'undefined';
