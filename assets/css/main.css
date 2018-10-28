@@ -1180,7 +1180,8 @@ s .ab {
 
 .pinkcloud {
   position: absolute;
-  width: 70%;
+  /* width: 70%; */
+  width:70vw;
   z-index: 1000;
   left: 0;
   right: 0;
@@ -1613,10 +1614,11 @@ s .ab {
   color: #78909C;
   font-family: 'Armata', sans-serif;
   font-weight: 800;
-  font-size: 1.3vw;
+  font-size: 1.2vw;
   letter-spacing: 0.05em;
   margin: 0;
   text-align: center;
+  padding-top: 1.2%;
 }
 
 .p-servicetitle {
@@ -1649,7 +1651,7 @@ s .ab {
   font-family: 'Inconsolata', monospace;
   font-weight: 1000;
   font-size: 1.2vw;
-  line-height: 1.4em;
+  line-height: 1.6em;
   text-align: center;
   padding-top: 2%;
   padding-bottom: 1%;
@@ -1681,7 +1683,7 @@ s .ab {
   font-family: 'Inconsolata', monospace;
   font-weight: 1000;
   font-size: 1.2vw;
-  line-height: 1.4em;
+  line-height: 1.6em;
 
   text-align: justify;
   hyphens: auto;
@@ -1695,6 +1697,7 @@ figure {
   height: auto;
   margin: auto;
   text-align: center;
+  padding-top:1.2%;
 }
 
 figcaption {
