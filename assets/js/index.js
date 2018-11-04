@@ -144,7 +144,9 @@ $(function () {
         var currentScrollPosition = $(this).scrollTop();
         var clickerPosition = $('.clicker').offset().top;
         var approachcontentPosition = $('.desc-content').offset().top;
-        var approachPosition = $('#approach').offset().top;
+        // var approachPosition = $('#approach').offset().top;
+        var approachPosition = $('.sticker2').offset().top;
+        
 
         if (currentScrollPosition > clickerPosition) {
             $('.skill').each(function (index) {
