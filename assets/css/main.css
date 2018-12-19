@@ -511,12 +511,12 @@ a.secondpagelink:active {
   height: auto;
   left: 20.5vw;
   top: 48vh;
-  z-index: 5;
+  z-index: 100;
   -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7), rgba(245, 245, 234, 0.63));
   filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7), rgba(247, 143, 170, 0.7));
-  -moz-animation: float 5s infinite;
+  /* -moz-animation: float 5s infinite;
   -webkit-animation: float 5s infinite;
-  animation: float 5s infinite;
+  animation: float 5s infinite; */
 }
 
 .hello-heart {
