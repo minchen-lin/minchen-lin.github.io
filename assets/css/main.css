@@ -144,9 +144,12 @@ q:after {
 }
 
 table {
-  border-collapse: collapse;
+  /* border-collapse: separate;
+  border-spacing: 2vw 0; */
+   border-collapse: collapse;
   border-spacing: 0;
 }
+
 
 header {
   height: 100%;
@@ -1683,7 +1686,22 @@ table.content_image_overview {
   /* margin-right:auto; */
   table-layout: auto;
   width: 90%;
+  /* text-align: center; */
+}
+
+
+
+table.content_image_overview-2 {
+  margin-top: 3%;
+  margin-left: 9%;
+  margin-right:9%;
+  table-layout: auto;
+  width: 80%;
   text-align: center;
+}
+
+table.content_image_overview-2 td{
+  vertical-align: top;
 }
 
 table.content_image {
@@ -1717,6 +1735,22 @@ table.content_image {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto; */
+}
+
+.p-content_overview {
+  margin: auto;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 1000;
+  font-size: 1.3vw;
+  line-height: 1.8em;
+  /* text-align: center; */
+  padding-top: 2%;
+  padding-bottom: 1%;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
 }
 
 .productlink {
@@ -1796,20 +1830,48 @@ hr.second-seperator {
   transform: rotate(-10deg);
 }
 
-.content_highlgiht.shown{
-  background-image: linear-gradient(to right, transparent 50%, #a0c4d8 50%);
+.content_highlight{
+  background-color: #a0c4d8;
+  opacity: 0.8;
 }
 
-.highlight.shown {
-  position: relative;
-  background-origin: 0;
-  background-size: 200% 100%;
-  background-repeat: repeat-x;
-  background-position: -100% 100%;
-  transition: background-position 0.8s ease-out;
+.back-to-top {
+  display: inline-block;
+  background-color:#cccccc;
+  box-shadow: -3px 5px 12px 0 rgba(56, 56, 56, 0.3);
+  opacity: 0.5;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  /* opacity: 0; */
+  visibility: hidden;
+  z-index: 1000;
 }
 
-
+.back-to-top::after {
+  content: "\f102";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+.back-to-top:hover {
+  cursor: pointer;
+  background-color:#bbbbbb;
+  opacity: 1;
+}
+.back-to-top:active {
+  background-color:#aaaaaa;
+  opacity: 1;
+}
 
 .approach-icon {
   margin-right: 0%;
@@ -1938,7 +2000,7 @@ figcaption {
   position: absolute;
   top: 45px;
   right: 25px;
-  color: #9E9E9E;
+  color: #bbbbbb;
   font-family: 'Armata', sans-serif;
   font-weight: 400;
   font-size: 2vw;

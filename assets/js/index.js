@@ -28,6 +28,8 @@ $(function () {
     //open popup
     $('.ch-item').on('click', function (event) {
         console.log('click');
+        $('.popup').append('<div class="back-to-top"></div>');
+
         event.preventDefault();
         var targetId = this.getAttribute('data-target');
         $('#' + targetId).addClass('is-visible');
@@ -35,6 +37,21 @@ $(function () {
         $('body').css('overflow', 'hidden');
 
         document.body.addEventListener('touchstart', onTouchStartListener);
+
+        $('.popup').scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('.back-to-top').css('visibility', 'visible');
+            } else {
+                $('.back-to-top').css('visibility', 'hidden');
+            }
+        });
+
+        $('.back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('.popup').animate({
+                scrollTop: 0
+            }, '300');
+        });
     });
 
 
@@ -146,7 +163,7 @@ $(function () {
         var approachcontentPosition = $('.desc-content').offset().top;
         // var approachPosition = $('#approach').offset().top;
         var approachPosition = $('.sticker2').offset().top;
-        
+
 
         if (currentScrollPosition > clickerPosition) {
             $('.skill').each(function (index) {
