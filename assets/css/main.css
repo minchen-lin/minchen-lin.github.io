@@ -2182,7 +2182,7 @@ footer {
   /* font-family: 'Armata', sans-serif; */
   font-family: 'Assistant', sans-serif;
   font-weight: 600;
-  font-size: 1em;
+  /* font-size: 1em; */
   letter-spacing: 0.1em;
   color: #ECECEC;
   position: absolute;
