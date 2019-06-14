@@ -1876,6 +1876,7 @@ hr.second-seperator {
 
 .content_highlight {
   background-color: rgba(160, 196, 216, 0.6);
+  vertical-align: baseline;
 }
 
 .back-to-top {
