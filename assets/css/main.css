@@ -353,7 +353,7 @@ a.secondpagelink:active {
   display: inline-block;
   text-decoration: none;
   font-size: 1.8vw;
-  font-weight: 1000;
+  font-weight: 800;
   letter-spacing: 0.05em;
   margin-left: 1.5em;
   margin-right: 1.5em;
@@ -2182,7 +2182,7 @@ footer {
   /* font-family: 'Armata', sans-serif; */
   font-family: 'Assistant', sans-serif;
   font-weight: 600;
-  font-size: 0.8em;
+  font-size: 1em;
   letter-spacing: 0.1em;
   color: #ECECEC;
   position: absolute;
