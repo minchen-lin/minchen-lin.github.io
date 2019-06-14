@@ -1663,12 +1663,14 @@ s .ab {
 
 .p-title-desc {
   color: #34465d;
-  font-family: 'Amatic SC', cursive;
+  /* font-family: 'Amatic SC', cursive; */
+  font-family: 'Chewy', cursive;
   font-weight: 800;
   font-size: 2.2vw;
   letter-spacing: 0.05em;
   margin: 0;
   text-align: center;
+  margin-top: 1%;
 }
 
 .p-subtitle {
@@ -1681,6 +1683,7 @@ s .ab {
   margin: 0;
   text-align: center;
   padding-top: 1%;
+  margin-bottom: 3%;
 }
 
 table.content_image_overview {
