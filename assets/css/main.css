@@ -1713,7 +1713,7 @@ table.content_image {
   margin-right: 10%;
   margin-left: 10%;
   table-layout: auto;
-  width: 75%;
+  width: 80%;
   text-align: center;
 }
 
@@ -1753,11 +1753,6 @@ table.content_image_mobile {
   padding-top: 2%;
   padding-bottom: 1%;
   text-align: left;
-  /* text-align: justify;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto; */
 }
 
 .p-content_overview {
@@ -1799,6 +1794,19 @@ table.content_image_mobile {
   padding-top: 2%;
   padding-bottom: 1%;
   text-align: right;
+}
+
+.p-content_image-3 {
+  width: 80%;
+  margin: auto;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 1000;
+  font-size: 1.3vw;
+  line-height: 1.8em;
+  /* text-align: center; */
+  padding-top: 2%;
+  padding-bottom: 5%;
+  text-align: center;
 }
 
 hr {
