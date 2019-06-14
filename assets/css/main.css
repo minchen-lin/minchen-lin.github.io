@@ -1658,9 +1658,10 @@ s .ab {
   color: #34465d;
   text-transform: uppercase;
   /* font-family: 'Amatic SC', cursive; */
-  /* font-family: 'Assistant', sans-serif; */
-  font-family: 'Chewy', cursive;
-  /* font-weight: 300; */
+  font-family: 'Assistant', sans-serif;
+  /* font-family: 'Chewy', cursive; */
+  font-weight: 800;
+  transform: scale(1, 1.1);
   font-size: 2.5vw;
   letter-spacing: 0.08em;
   margin: 0;
@@ -1671,9 +1672,10 @@ s .ab {
 .p-title-desc {
   color: #34465d;
   /* font-family: 'Amatic SC', cursive; */
-  font-family: 'Chewy', cursive;
+  font-family: 'Assistant', sans-serif;
+  /* font-family: 'Chewy', cursive; */
   font-weight: 800;
-  font-size: 2.2vw;
+  font-size: 1.8vw;
   letter-spacing: 0.05em;
   margin: 0;
   text-align: center;
