@@ -395,6 +395,9 @@ a.secondpagelink:active {
   .main-nav {
     display: none;
   }
+  .back-to-top{
+    display: none;
+  }
 }
 
 
@@ -1719,6 +1722,11 @@ table.content_image {
   width: 80%;
 }
 
+.concept-demo {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 100%;
+}
+
 
 .p-content_image {
   margin: auto;
@@ -1755,6 +1763,7 @@ table.content_image {
 
 .productlink {
   color: #339ed8;
+  text-decoration:none;
   margin: auto;
   font-family: 'Inconsolata', monospace;
   font-weight: 1000;
@@ -1831,8 +1840,7 @@ hr.second-seperator {
 }
 
 .content_highlight{
-  background-color: #a0c4d8;
-  opacity: 0.8;
+  background-color: rgba(160, 196, 216, 0.6);
 }
 
 .back-to-top {
@@ -1904,7 +1912,7 @@ hr.second-seperator {
   letter-spacing: 0.05em;
   margin: 0;
   text-align: center;
-  padding-top: 2%;
+  padding-top: 3%;
 }
 
 .p-servicetitle {
@@ -1919,7 +1927,7 @@ hr.second-seperator {
 }
 
 .p-contact {
-  color: #34465d;
+  color: #888888;
   font-family: 'Inconsolata', monospace;
   font-weight: 1000;
   font-size: 1.2vw;
@@ -1957,15 +1965,21 @@ hr.second-seperator {
   padding-bottom: 1%;
 }
 
-.p-content2 {
-  width: 85%;
+.p-session_content {
+  width: 70%;
   margin: auto;
   text-align: center;
   padding-bottom: 1%;
 }
 
+/* .p-content2 {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 1%;
+} */
+
 .p-content-desc {
-  padding-top: 1%;
   font-family: 'Inconsolata', monospace;
   font-weight: 1000;
   font-size: 1.3vw;
