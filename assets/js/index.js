@@ -27,42 +27,47 @@ $(function () {
 
     //open popup
     $('.ch-item').on('click', function (event) {
-        console.log('click');
         $('.popup').append('<div class="back-to-top"></div>');
 
         event.preventDefault();
-        var targetId = this.getAttribute('data-target');
-        $('#' + targetId).addClass('is-visible');
-        //$('.overlayTW').addClass('is-visible');
-        $('body').css('overflow', 'hidden');
-
+        openPopUp(this);
         document.body.addEventListener('touchstart', onTouchStartListener);
-
-        $('.popup').scroll(function () {
-            if ($(this).scrollTop() > 300) {
-                $('.back-to-top').css('visibility', 'visible');
-            } else {
-                $('.back-to-top').css('visibility', 'hidden');
-            }
-        });
-
-        $('.back-to-top').on('click', function (e) {
-            e.preventDefault();
-            $('.popup').animate({
-                scrollTop: 0
-            }, '300');
-        });
     });
-
 
     //close popup
     $('.close').on('click', function (event) {
         event.preventDefault();
-        var targetId = this.getAttribute('data-target');
+        closePopUp(this);
+        document.body.removeEventListener('touchstart', onTouchStartListener);
+    });
+
+    var openPopUp = function(popup) {
+        var targetId = popup.getAttribute('data-target');
+        $('#' + targetId).addClass('is-visible');
+        $('body').css('overflow', 'hidden');
+        return popup;
+    }
+
+    var closePopUp = function(popup) {
+        var targetId = popup.getAttribute('data-target');
         $('#' + targetId).removeClass('is-visible');
         $('body').css('overflow', 'scroll');
+        return popup;
+    }
 
-        document.body.removeEventListener('touchstart', onTouchStartListener);
+    $('.popup').scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.back-to-top').css('visibility', 'visible');
+        } else {
+            $('.back-to-top').css('visibility', 'hidden');
+        }
+    });
+
+    $('.popup').on('click', '.back-to-top', function (e) {
+        e.preventDefault();
+        $('.popup').animate({
+            scrollTop: 0
+        }, '300');
     });
 
     $('.overlay').on('click', function (event) {
