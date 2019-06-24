@@ -202,6 +202,17 @@ $(function () {
         };
     });
 
-
+    //enlarge image
+    $('.wireframe').on('click', function () {
+        $('.zoom-in')
+            .css({
+                'backgroundImage': `url(${this.src})`,
+                'z-index': 10000
+            })
+            .addClass('open')
+            .one('click', function () {
+                $(this).removeClass('open');
+            })
+    });
 
 });

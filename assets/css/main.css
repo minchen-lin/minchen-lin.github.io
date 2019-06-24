@@ -1627,6 +1627,34 @@ s .ab {
   transition: opacity 0.3s 0s, visibility 0s 0s;
 }
 
+.zoom-in {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.8) none 50% / contain no-repeat;
+  cursor: pointer;
+  transition: 0.3s;
+  
+  visibility: hidden;
+  opacity: 0;
+}
+.zoom-in.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.zoom-in:after { /* X button icon */
+  content: "\2715";
+  position: absolute;
+  color:#fff;
+  top: 10px;
+  right:20px;
+  font-size: 2em;
+}
+
+
 .popup {
   width: 100vw;
   height: 100vh;
@@ -1882,7 +1910,7 @@ hr.second-seperator {
 .back-to-top {
   display: inline-block;
   background-color: #cccccc;
-  box-shadow: -3px 5px 12px 0 rgba(56, 56, 56, 0.3);
+  /* box-shadow: -3px 5px 12px 0 rgba(56, 56, 56, 0.3); */
   opacity: 0.88;
   width: 50px;
   height: 50px;
@@ -1937,6 +1965,17 @@ hr.second-seperator {
   margin: 0;
   text-align: center;
   padding-top: 1.2%;
+}
+
+.p-content-title{
+  color: rgb(85, 132, 156);
+  font-family: 'Assistant', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: left;
+  font-size: 1.7vw;
+  letter-spacing: 0.02em;
+  padding-bottom: 0.5%;
 }
 
 .p-cititle {
@@ -2037,6 +2076,8 @@ figure {
   text-align: center;
   padding-top: 1.2%;
 }
+
+
 
 figcaption {
   text-align: center;
