@@ -1627,6 +1627,13 @@ s .ab {
   transition: opacity 0.3s 0s, visibility 0s 0s;
 }
 
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
+
 .zoom-in {
   position: fixed;
   top:0;
