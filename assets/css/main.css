@@ -836,7 +836,7 @@ s .ab {
   font-size: 1.5vw;
   letter-spacing: 0.05em;
   padding-top: 5%;
-  padding-bottom: 8%;
+  padding-bottom: 5%;
 }
 
 .ability {
@@ -2020,7 +2020,6 @@ hr.second-seperator {
   margin: 0;
   text-align: center;
   padding-top: 5%;
-  padding-bottom: 2%;
 }
 
 .p-abstract {
@@ -2049,6 +2048,35 @@ hr.second-seperator {
   padding-bottom: 1%;
 }
 
+.p-content-footer{
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 2%;
+  font-family: 'Inconsolata', monospace;
+  color: #333333;
+  font-size: 1.3vw;
+  line-height: 1.8em;
+}
+
+a.project-link:active,
+a.project-link:hover {
+  cursor: pointer;
+  color: #895d95;
+  /* color: rgb(82, 35, 51); */
+}
+
+.project-withoutlink {
+  font-size: 1.3vw;
+  color: #000;
+  font-weight: 700;
+}
+
+.project-link {
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+
 .p-session_content {
   width: 70%;
   margin: auto;
@@ -2065,7 +2093,7 @@ hr.second-seperator {
 
 .p-content-desc {
   font-family: 'Inconsolata', monospace;
-  font-weight: 1000;
+  font-weight: 700;
   font-size: 1.3vw;
   line-height: 1.8em;
   /* text-align: left; */
@@ -2074,6 +2102,10 @@ hr.second-seperator {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;  */
+}
+
+.project-link{
+  font-size: 1.2vw;
 }
 
 figure {
