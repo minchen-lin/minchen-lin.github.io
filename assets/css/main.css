@@ -2176,10 +2176,12 @@ figcaption {
   position: absolute;
   top: 45px;
   right: 25px;
+  padding: 30px;
   color: #bbbbbb;
-  font-family: 'Armata', sans-serif;
-  font-weight: 400;
-  font-size: 2vw;
+  font-family: 'Inconsolata', monospace;
+  /* font-family: 'Armata', sans-serif; */
+  font-weight: 700;
+  font-size: 2.5vw;
   text-decoration: none;
   outline: none;
   cursor: pointer;
