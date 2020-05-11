@@ -280,6 +280,7 @@ a.secondpagelink:active {
   background-size: 100% 100%;
 }
 
+
 .stars {
   transform: perspective(500px);
   transform-style: preserve-3d;
@@ -1511,7 +1512,7 @@ s .ab {
 }
 
 .ch-img-6 {
-  background-image: url("/assets/images/projects/Family-cover.jpg");
+  background-image: url("/assets/images/projects/GO/go-cover.png");
   background-size: contain;
 }
 
@@ -1815,6 +1816,16 @@ table.content_image_mobile {
   text-align: center;
 }
 
+table.content_image_mobile_chess {
+  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-right: 5%;
+  margin-left: 5%;
+  table-layout: auto;
+  width: 90%;
+  text-align: center;
+}
+
 .finalUI {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   width: 80%;
@@ -1823,6 +1834,11 @@ table.content_image_mobile {
 .finalUI-mobile {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 50%;
+}
+
+.finalUI-mobile-2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 47%;
 }
 
 .concept-demo {
@@ -2026,6 +2042,17 @@ hr.second-seperator {
   padding-bottom: 0.5%;
 }
 
+.p-content-title_chess {
+  color: #61498A;
+  font-family: 'Assistant', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: left;
+  font-size: 1.7vw;
+  letter-spacing: 0.02em;
+  padding-bottom: 0.5%;
+}
+
 .p-cititle {
   color: #895d95;
   opacity: 0.8;
@@ -2083,6 +2110,14 @@ hr.second-seperator {
 
 .p-content {
   width: 70%;
+  margin: auto;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.p-content_chess {
+  width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 2%;
